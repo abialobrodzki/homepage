@@ -1,12 +1,16 @@
-h1 {
-	color: blueviolet;
+body {
+	background:#fefefe;
 }
-
-h2 {
-	color: #ffffff;
+h1 {
+	color: whitesmoke;
 	background: rgb(255, 0, 0);
 }
 
+h2 {
+	color: #1460aa;
+	background: #ffff00;
+}
+
 section {
-	background: #ffd000;
+	background:orange;
 }
