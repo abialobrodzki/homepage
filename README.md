@@ -1,7 +1,11 @@
 # What-The-Frontend
-Frontend practice
 
-Notatki:
- - walidacja kodu https://validator.w3.org/nu/#textarea 
- - do edycji całej zawartości strony użyć 'contenteditable' np. '<body style contenteditable>'
- - formatowanie dokumentu CTRL+SHIFT+P -> "Format Document"  lub  SHIFT+ALT+F
+## Frontend practice
+1. Module I
+1. Module II
+
+## Notes:
+ - code validator: https://validator.w3.org/nu/#textarea 
+ - use 'contenteditable' to edit all page content, e.g., `body style contenteditable`
+ - format document: `CTRL` + `SHIFT` + `P` -> `Format Document` or `SHIFT` + `ALT` + `F`
+ - format *.md https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax 
