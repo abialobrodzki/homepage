@@ -1,0 +1,113 @@
+<!DOCTYPE html> <!-- możemy wywołać szkielet poprzez: '!' + 'TAB' -->
+<html lang="pl"> <!-- ustawienie języka strony -->
+<!-- html - dokumentacja https://html.spec.whatwg.org/multipage/ -->
+
+<head> <!-- elementy potrzebne do załadowania strony i do jej skanowania -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WTF: Co ten frontend</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- reguły css wewnątrz pliku - dokumentacja https://www.w3.org/TR/CSS/ -->
+    <!-- <style> 
+        h1 {
+            color:blueviolet;
+        }
+        h2 {
+            color: #ffffff;
+            background: #ff0000;
+        }
+        section {
+            background: #ffd000;
+        }
+    </style> -->
+</head>
+
+<body> <!-- jak chcemy zawinąć dłuższy tekst to, 'view -> Word Wrap' lub 'ALT' + 'Z' -->
+    <header> <!-- wyrzucony poza sekcję main bo się powtarza na innych stronach -->
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="index_test.html">Strona test</a>
+        </nav>
+    </header>
+    <main> <!-- główna część dokumentu - jest to UNIKATOWA TREŚĆ - nie może się powtarzać -->
+        <header id="top"> <!-- nagłówek dokumetu/sekcji/artykuł -->
+            <h1>Index test</h1> <!-- tekstowy nagłówek tytułowy h1-h6 -->
+        </header>
+        <section> <!-- sekcja dokumentu -->
+            <h2>Test 1</h2>
+            <p>Paragraf section - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lacus et mi porta
+                commodo a ac sem
+                Vivamus id
+                odio ac lectus blandit pretium sed at ante. Etiam quis imperdiet ante, in fringilla nisl. Morbi ut
+                iaculis
+                nunc. Integer sit amet nibh nisi. Nulla ac enim vel lectus efficitur.</p> <!-- paragraf/akapit -->
+        </section>
+        <section>
+            <h2>Test 2</h2>
+            <article> <!-- samodzielne treści -->
+                <h3>Test 2.1 - h3</h3>
+                <p>Paragraf article - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus tristique
+                    nulla eu bibendum.
+                    Aliquam <br>
+                    pharetra purus ac est bibendum, vitae gravida tellus luctus. Ut vel maximus dolor. Donec eu rhoncus
+                    sem.
+                    Cras <br>
+                    accumsan, nibh eu feugiat luctus, ante turpis varius nunc, id volutpat nisi massa nec tellus.
+                    Maecenas
+                    rutrum, <br>
+                    lectus sed auctor viverra, erat quam ultrices turpis, sit amet suscipit nisi orci in sem. Nunc lorem
+                    magna,
+                    placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper vehicula
+                    odio, eu facilisis justo luctus at. <br> Etiam viverra mollis orci at sagittis. Donec et cursus sem,
+                    vitae tempor turpis. Etiam suscipit, ex in mollis viverra, felis orci imperdiet nibh, eget molestie
+                    orci urna nec neque. Morbi vel metus enim.Etiam suscipit, ex in mollis viverra, felis orci imperdiet
+                    nibh, eget molestie
+                    orci urna nec neque. Morbi vel metus enim.
+                    Praesent molestie faucibus libero, sit amet facilisis magna. Nulla in pulvinar dui. Donec pretium
+                    ultrices tempor.
+                    Cras feugiat vulputate orci non egestas. Phasellus porta urna velit, non suscipit lectus cursus
+                    quis. <br> </p>
+            </article>
+            <article>
+                <h3>Test 2.2 - h3</h3>
+                <p>Paragraf article - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a quam vitae tellus
+                    elementum pulvinar at
+                    at
+                    erat.
+                    Praesent molestie faucibus libero, sit amet facilisis magna. Nulla in pulvinar dui. Donec pretium
+                    ultrices tempor.
+                    Cras feugiat vulputate orci non egestas. Phasellus porta urna velit, non suscipit lectus cursus
+                    quis. <br>
+                    Aenean <br>
+                    lobortis viverra ex, ut ultricies est bibendum id. Curabitur a sollicitudin velit. Morbi volutpat
+                    nisi
+                    quam, eu
+                    sagittis eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper vehicula
+                    odio, eu facilisis justo luctus at. Etiam viverra mollis orci at sagittis. <br> Donec et cursus sem,
+                    vitae tempor turpis. Etiam suscipit, ex in mollis viverra, felis orci imperdiet nibh, eget molestie
+                    orci urna nec neque. Morbi vel metus enim.
+                    Praesent molestie faucibus libero, sit amet facilisis magna. Nulla in pulvinar dui. Donec pretium
+                    ultrices tempor.
+                    Cras feugiat vulputate orci non egestas. Phasellus porta urna velit, non suscipit lectus cursus
+                    quis. <br>
+                    Aenean <br>
+                    lobortis viverra ex, ut ultricies est bibendum id. Curabitur a sollicitudin velit. Morbi volutpat
+                    nisi
+                    quam, eu
+                    sagittis eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper vehicula
+                    odio, eu facilisis justo luctus at. Etiam viverra mollis orci at sagittis. <br> Donec et cursus sem,
+                    vitae tempor turpis. Etiam suscipit, ex in mollis viverra, felis orci imperdiet nibh, eget molestie
+                    orci urna nec neque. Morbi vel metus enim.</p>
+            </article>
+        </section>
+    </main>
+    <!-- wyrzucony poza sekcję main bo się powtarza na innych stronach -->
+    <footer>Footer - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan, mi at ultrices <a
+            href="#top">Do góry ⏫</a>. <!-- emoji: "win" + ">" -->
+    </footer> <!-- stopka dokumetu/sekcji/artykuł -->
+</body>
+
+</html>
+
+<!-- walidacja html -> https://validator.w3.org/nu/#textarea -->
+<!-- tablica Trello -> https://trello.com/b/3f3jdOM3/wtf-szkolenie -->

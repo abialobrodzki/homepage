@@ -3,6 +3,7 @@
 ## Frontend practice
 1. Module I
 1. Module II
+1. Module III
 
 ## Notes:
  - code validator: https://validator.w3.org/nu/#textarea 

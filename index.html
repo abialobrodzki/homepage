@@ -23,8 +23,14 @@
 </head>
 
 <body> <!-- jak chcemy zawinąć dłuższy tekst to, 'view -> Word Wrap' lub 'ALT' + 'Z' -->
-	<main> <!-- główna część dokumentu -->
-		<header> <!-- nagłówek dokumetu/sekcji/artykuł -->
+	<header> <!-- wyrzucony poza sekcję main bo się powtarza na innych stronach -->
+		<nav>
+			<a href="index.html">Strona główna</a>
+			<a href="index_test.html">Strona test</a>
+		</nav>
+	</header>
+	<main> <!-- główna część dokumentu - jest to UNIKATOWA TREŚĆ - nie może się powtarzać -->
+		<header id="top"> <!-- nagłówek dokumetu/sekcji/artykuł -->
 			<h1>Nagłówek tekstowy header - h1</h1> <!-- tekstowy nagłówek tytułowy h1-h6 -->
 		</header>
 		<section> <!-- sekcja dokumentu -->
@@ -75,30 +81,29 @@
 			<article>
 				<h3>1-2. Stworzenie projeku</h3>
 				<p>Zrzut utworzonego projektu i jego przykładowe stylowanie - może się zmienić^^:</p>
-				<img src="/dev/homepage/homework/projekt.png" alt="Zrzut ekranu przedstawiający drzewo projektu"
-					width="1000" height="500">
+				<img src="homework/projekt.png" alt="Zrzut ekranu przedstawiający drzewo projektu" width="1000"
+					height="500">
 			</article>
 			<article>
 				<h3>3. Zagadka</h3>
 				<p>Zrzut rozwiązania <a
 						href="https://codepen.io/maciejkorsan/pen/qwwYQM/8db755719dea64797342e1840ff2b7ee">zagadki</a>:
 				</p>
-				<img src="/dev/homepage/homework/zagadka.png" alt="Zrzut ekranu przedstawiający rozwiązanie zagadki"
-					width="1000" height="500">
+				<img src="homework/zagadka.png" alt="Zrzut ekranu przedstawiający rozwiązanie zagadki" width="1000"
+					height="500">
 			</article>
 			<article>
 				<h3>4. Myślenie jak programista</h3>
 				<p>Zrzut utworzonego schematu zmywania naczyń w programie <a
 						href="https://app.diagrams.net/">draw.io</a>:</p>
-				<img src="/dev/homepage/homework/proces.png" alt="Zrzut ekranu przedstawiający schemat" width="500"
-					height="500">
+				<img src="homework/proces.png" alt="Zrzut ekranu przedstawiający schemat" width="500" height="500">
 			</article>
 			<article>
 				<h3>5. Kawał</h3>
 				<p>Zrzut zmodyfikowanej zawartości strony <a
 						href="https://www.bankier.pl/wiadomosc/Przewidywalna-RPP-slepy-UKNF-ws-Bedzina-i-oplakane-efekty-500-WYKRESY-TYGODNIA-8575172.html">Bankier.pl</a>
 					- fake:</p>
-				<img src="/dev/homepage/homework/joke.png"
+				<img src="homework/joke.png"
 					alt="Zrzut ekranu przedstawiający zmodyfikowaną zawartośc strony bankier.pl" width="1000"
 					height="500">
 			</article>
@@ -107,33 +112,89 @@
 				<p>Zrzut do utworzonej tablicy w <a href="https://trello.com/b/3f3jdOM3/wtf-szkolenie">Trello</a> do
 					śledzenia
 					postępów podczas kursu:</p>
-				<img src="/dev/homepage/homework/trello.png" alt="Zrzut ekranu przedstawiający utworzoną tablicę Trello"
-					width="1000" height="500">
+				<img src="homework/trello.png" alt="Zrzut ekranu przedstawiający utworzoną tablicę Trello" width="1000"
+					height="500">
 			</article>
 		</section>
 		<section>
-			<h2>Praca domowa - Moduł III</h2>
+			<h2>GIT</h2>
 			<article>
-				<h3>Nagłówek testowy</h3>
-				<p>Maecenas
-					rutrum,
-					lectus sed auctor viverra, erat quam ultrices turpis, sit amet suscipit nisi orci in sem. Nunc lorem
-					magna,
-					placerat.</p>
-			</article>
-			<article>
-				<h3>Git</h3>
-				<p>Praesent molestie faucibus libero, sit amet facilisis magna. Nulla in pulvinar dui. Donec pretium
+				<h3>GitHub - repozytorium projektu</h3>
+				<p>Link do utworzonego <a href="https://github.com/abialobrodzki/What-The-Frontend">repozytorium</a>.
+					Praesent molestie
+					faucibus libero, sit amet facilisis magna. Nulla in pulvinar dui. Donec pretium
 					ultrices tempor.
 				</p>
 			</article>
 		</section>
-		<footer>Footer - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan, mi at ultrices.
-		</footer> <!-- stopka dokumetu/sekcji/artykuł -->
+		<section>
+			<h2>Atrybuty i nowe znaczniki</h2>
+			<article>
+				<h3>Nowa linia - br</h3>
+				<p>Link do utworzonego Praesent molestie - tutaj użyty br <br> faucibus libero, sit amet facilisis
+					magna.
+					Tag br może być używany z zamkniętym znacznikiem.
+				</p>
+			</article>
+			<article>
+				<h3>Znaczniki wyróżniania tekstu - b / strong oraz i / em</h3>
+				<!-- znaczniki "b" oraz "i" nie mają znaczenia semantycznego -->
+				<p>Maecenas rutrum, lectus sed auctor <b>znacznik-b viverra, erat</b> quam <strong>znacznik-strong
+						ultrices turpis,</strong> sit
+					<em>znacznik-em amet suscipit</em> nisi <i>znacznik-i orci in
+					</i>sem. Nunc lorem
+					magna, placerat. <br> Z powodu znaczenia semantycznego <strong>Używamy tylko znaczników
+						strong.</strong> <em>Używamy tylko znaczników em.</em>
+				</p>
+			</article>
+			<article>
+				<h3>Znacznik podkreślania - u</h3> <!-- dodanie nietekstowej adnotacji np. oznaczenie błędu -->
+				<p>Maecenas
+					rutrum,
+					<u>lectus sed auctor viverra</u>, erat quam ultrices turpis, sit amet suscipit nisi orci in sem.
+					Nunc lorem
+					magna,
+					placerat.
+				</p>
+			</article>
+			<article>
+				<h3>Atrybuty - href / target</h3> <!-- znacznik a - łącze/linki wewnątrz dokumentu -->
+				<p>Przykładowe linki:<br>
+					strona <a href="https://cotenfrontend.pl/" target="_blank">WTF</a> otwierana w nowej karcie - dodany
+					atrybut target <br>
+					strona <a href="https://cotenfrontend.pl/">WTF</a> otwierana w tej samej karcie</p>
+			</article>
+			<article id="link">
+				<h3>Atrybut - id</h3> <!-- identyfikuje element - nawigacja w obrębie dokumentu -->
+				<p>Nawigacja do elementu o id <a href=#link>link</a></p>
+			</article>
+			<article>
+				<h3>Nawigacja - nav</h3>
+				<p>Przykładowe użycie:</p>
+				<nav>
+					<a href="index.html">Strona główna</a>
+					<a href="index_test.html">Strona test</a>
+				</nav>
+			</article>
+			<article>
+				<h3>Obrazki - img</h3> <!-- załączamy obrazek o podanym adresie -->
+				<p>Przykładowy obrazek:
+				</p>
+				<img src="warstwy.png" alt="Warstwy strony internetowej" width="500" height="400">
+			</article>
+		</section>
+		<section>
+			<h2>Praca domowa - Moduł III</h2>
+		</section>
 	</main>
+	<!-- wyrzucony poza sekcję main bo się powtarza na innych stronach -->
+	<footer>Footer - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan, mi at ultrices <a
+			href="#top">Do góry ⏫</a>. <!-- emoji: "win" + ">" -->
+	</footer> <!-- stopka dokumetu/sekcji/artykuł -->
 </body>
 
 </html>
 
 <!-- walidacja html -> https://validator.w3.org/nu/#textarea -->
 <!-- tablica Trello -> https://trello.com/b/3f3jdOM3/wtf-szkolenie -->
+<!-- spis atrybutów globalnych -> https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes -->
