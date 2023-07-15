@@ -38,7 +38,8 @@ a {
 
 section a {
 	/* <-- najechanie kursorem powoduje podgląd edytowanych selektorów */
-	color: pink;
+	color: inherit;
+	/* <-- inherit - dziedziczenie od rodzica*/
 }
 
 /* mixowanie selektorów */
