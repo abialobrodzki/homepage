@@ -300,6 +300,48 @@
 			</article>
 		</section>
 		<section>
+			<h2>Działanie przeglądarki</h2>
+			<article>
+				<h3>Protokół HTTP</h3>
+				<p>HTTP - Hypertext Transfer Protocol <br> HTML = HyperText Markup Language <br> http = protokół do
+					transportowania htmla <br>
+					HTTPS - Hypertext Transfer Protocol Secure
+				</p>
+			</article>
+			<article>
+				<h3>URL</h3>
+				<p>URL - Uniform Resource Locator
+					Schemat działanie przegląarki: <br>
+					- wpisany adres w pasku <br>
+					- przeglądarka szuka serwera [DNS] <br>
+					- po znalezieniu serwera odpytuje go o index (jeśli podamy sam adres serwera) - index
+					zależy od konfiguracji serwera (w przypadku stron statycznych może być to index.html) <br>
+					- serwer wysyła do przeglądarki zawartość html <br>
+					- przeglądarka wczytuje html i szuka wszystkich dodatkowych zasobów: style, skrypty, obrazki itp. i
+					dla każdego z zasobów wykonuje zapytanie <br>
+					- przeglądarka parsuje i renderuje stronę <br>
+				</p>
+				<img src="url.png" alt="Warstwy strony internetowej" width="500" height="250">
+			</article>
+			<article>
+				<h3>Kody odpowiedzi HTTP</h3>
+				<p>1xx - hold on <br>
+					200 - OK - 2xx - here you go <br>
+					30x - Szukasz w złym miejscu - przekieruję Cię w dobre (bo wiem gdzie) - 3xx - go away <br>
+					404 - Nie mam tego czego potrzebujesz - 4xx - you fucked up <br>
+					50x - Błąd wewnętrzny serwera - 5xx - I fucked up<br>
+				</p>
+			</article>
+			<article>
+				<h3>root (/)</h3>
+				<p>Jest istotną częścią ścieżek do zasobów np. podczas publikacji na serwerze. Podczas uruchamiania z
+					dysku lokalnego ładowana zawartość jest bez "/". <br>
+					Dzieje się tak ponieważ brak "/" z przodu ścieżki czyni adres do zasobu relatywnym (przeglądarka
+					szuka pliku w aktualnym "katalogu")
+				</p>
+			</article>
+		</section>
+		<section>
 			<h2>Praca domowa - Moduł III</h2>
 		</section>
 	</main>
