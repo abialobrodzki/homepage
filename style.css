@@ -1,6 +1,7 @@
 body {
-	background:#fefefe;
+	background: #fefefe;
 }
+
 h1 {
 	color: whitesmoke;
 	background: rgb(255, 0, 0);
@@ -12,5 +13,48 @@ h2 {
 }
 
 section {
-	background:orange;
+	background: orange;
+}
+
+/* stylowanie z użyciem klas - najczęsciej stosowane */
+.czerwony {
+	color: red;
+}
+
+/* stylowanie z użyciem id - tylko jedno, unikatowe */
+#id {
+	background: yellow;
+}
+
+/* reguła important - nadpisuje stylowanie klas i id */
+h3 {
+	color: aqua !important;
+}
+
+/* łączenie selektorów */
+a {
+	color: green;
+}
+
+section a {
+	/* <-- najechanie kursorem powoduje podgląd edytowanych selektorów */
+	color: pink;
+}
+
+/* mixowanie selektorów */
+.my-article p {
+	/* każde p w klasie my-article ma deklarowane tutaj stylowanie */
+	background: #1460aa;
+	color: #fefefe;
+}
+
+/* styl użyty w połączeniu z inline - #name ma niższy priorytet */
+#name {
+	color: red;
+}
+
+/* jeżeli specyficzność jest równa - to styl użyty bliżej końca pliku */
+#text {
+	color: red;
+	color: purple;
 }
