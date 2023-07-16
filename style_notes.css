@@ -1,0 +1,62 @@
+/* NOTATKI */
+/* przykłodowe stylowanie */
+h1 {
+    color: whitesmoke;
+    background: rgb(255, 0, 0);
+}
+
+h2 {
+    color: #1460aa;
+    background: #ffff00;
+}
+
+section {
+    background: orange;
+}
+
+/* stylowanie z użyciem klas - najczęsciej stosowane */
+.czerwony {
+    color: red;
+}
+
+/* stylowanie z użyciem id - tylko jedno, unikatowe */
+#id {
+    background: yellow;
+}
+
+/* reguła important - nadpisuje stylowanie klas i id */
+/* h3 {
+	color: aqua !important;
+} */
+h3 {
+    color: aqua;
+}
+
+/* łączenie selektorów */
+a {
+    color: green;
+}
+
+/* <-- najechanie kursorem powoduje podgląd edytowanych selektorów */
+/* <-- inherit - dziedziczenie od rodzica*/
+section a {
+    color: inherit;
+}
+
+/* mixowanie selektorów */
+.my-article p {
+    /* każde p w klasie my-article ma deklarowane tutaj stylowanie */
+    background: #1460aa;
+    color: #fefefe;
+}
+
+/* styl użyty w połączeniu z inline - #name ma niższy priorytet */
+#name {
+    color: red;
+}
+
+/* jeżeli specyficzność jest równa - to styl użyty bliżej końca pliku */
+#text {
+    color: red;
+    color: purple;
+}

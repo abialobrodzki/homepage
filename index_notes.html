@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WTF: Co ten frontend</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="style_notes.css" rel="stylesheet" type="text/css">
     <!-- reguły css wewnątrz pliku - dokumentacja https://www.w3.org/TR/CSS/ -->
     <!-- <style> 
         h1 {
@@ -33,11 +33,11 @@
     </header>
     <main> <!-- główna część dokumentu - jest to UNIKATOWA TREŚĆ - nie może się powtarzać -->
         <header id="top"> <!-- nagłówek dokumetu/sekcji/artykuł -->
-            <h1>Notatki ze szkolenia WTF: Co Ten Frontend. Nagłówek tekstowy header - h1</h1>
+            <h1>Notatki ze szkolenia WTF: Co Ten Frontend. Nagłówek tekstowy header - &lt;h1&gt;</h1>
             <!-- tekstowy nagłówek tytułowy h1-h6 -->
         </header>
         <section> <!-- sekcja dokumentu -->
-            <h2>Moduł II. Nagłówek tekstowy section - h2</h2>
+            <h2>Moduł II. Nagłówek tekstowy section - &lt;h2&gt;</h2>
             <p>Paragraf section - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lacus et mi porta
                 commodo a ac sem
                 Vivamus id
@@ -46,9 +46,9 @@
                 nunc. Integer sit amet nibh nisi. Nulla ac enim vel lectus efficitur.</p> <!-- paragraf/akapit -->
         </section>
         <section>
-            <h2>Moduł II. Nagłówek tekstowy section - h2</h2>
+            <h2>Moduł II. Nagłówek tekstowy section - &lt;h2&gt;</h2>
             <article> <!-- samodzielne treści -->
-                <h3>Nagłówek tekstowy article - h3</h3>
+                <h3>Nagłówek tekstowy article - &lt;h3&gt;</h3>
                 <p>Paragraf article - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus tristique
                     nulla eu bibendum.
                     Aliquam
@@ -63,7 +63,7 @@
                     placerat.</p>
             </article>
             <article>
-                <h3>Nagłówek tekstowy article - h3</h3>
+                <h3>Nagłówek tekstowy article - &lt;h3&gt;</h3>
                 <p>Paragraf article - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a quam vitae tellus
                     elementum pulvinar at
                     at
@@ -94,25 +94,27 @@
         <section>
             <h2>Moduł III. Atrybuty i nowe znaczniki</h2>
             <article>
-                <h3>Nowa linia - br</h3>
-                <p>Link do utworzonego Praesent molestie - tutaj użyty br <br> faucibus libero, sit amet facilisis
+                <h3>Nowa linia - &lt;br&gt;</h3>
+                <p>Link do utworzonego Praesent molestie - tutaj użyty &lt;br&gt; <br> faucibus libero, sit amet
+                    facilisis
                     magna.
-                    Tag br może być używany z zamkniętym znacznikiem.
+                    Tag &lt;/br&gt; może być używany z zamkniętym znacznikiem.
                 </p>
             </article>
             <article>
-                <h3>Znaczniki wyróżniania tekstu - b / strong oraz i / em</h3>
+                <h3>Znaczniki wyróżniania tekstu - &lt;b&gt; / &lt;strong&gt; oraz &lt;i&gt; / &lt;em&gt;</h3>
                 <!-- znaczniki "b" oraz "i" nie mają znaczenia semantycznego -->
-                <p>Maecenas rutrum, lectus sed auctor <b>znacznik-b viverra, erat</b> quam <strong>znacznik-strong
+                <p>Maecenas rutrum, lectus sed auctor <b>znacznik-&lt;b&gt; viverra, erat</b> quam
+                    <strong>znacznik-&lt;strong&gt;
                         ultrices turpis,</strong> sit
-                    <em>znacznik-em amet suscipit</em> nisi <i>znacznik-i orci in
+                    <em>znacznik-&lt;em&gt; amet suscipit</em> nisi <i>znacznik-&lt;i&gt; orci in
                     </i>sem. Nunc lorem
                     magna, placerat. <br> Z powodu znaczenia semantycznego <strong>Używamy tylko znaczników
-                        strong.</strong> <em>Używamy tylko znaczników em.</em>
+                        &lt;strong&gt;.</strong> <em>Używamy tylko znaczników &lt;em&gt;.</em>
                 </p>
             </article>
             <article>
-                <h3>Znacznik podkreślania - u</h3> <!-- dodanie nietekstowej adnotacji np. oznaczenie błędu -->
+                <h3>Znacznik podkreślania - &lt;u&gt;</h3> <!-- dodanie nietekstowej adnotacji np. oznaczenie błędu -->
                 <p>Maecenas
                     rutrum,
                     <u>lectus sed auctor viverra</u>, erat quam ultrices turpis, sit amet suscipit nisi orci in sem.
@@ -122,18 +124,19 @@
                 </p>
             </article>
             <article>
-                <h3>Atrybuty - href / target</h3> <!-- znacznik a - łącze/linki wewnątrz dokumentu -->
+                <h3>Atrybuty - &lt;a <em>href</em> i/lub <em>target</em>&gt;</h3>
+                <!-- znacznik a - łącze/linki wewnątrz dokumentu -->
                 <p>Przykładowe linki:<br>
                     strona <a href="https://cotenfrontend.pl/" target="_blank">WTF</a> otwierana w nowej karcie - dodany
-                    atrybut target <br>
+                    atrybut <em>target</em> <br>
                     strona <a href="https://cotenfrontend.pl/">WTF</a> otwierana w tej samej karcie</p>
             </article>
             <article id="link">
                 <h3>Atrybut - id</h3> <!-- identyfikuje element - nawigacja w obrębie dokumentu -->
-                <p>Nawigacja do elementu o id <a href=#link>link</a></p>
+                <p>Nawigacja do elementu o <em>id</em> <a href=#link>link</a></p>
             </article>
             <article>
-                <h3>Nawigacja - nav</h3>
+                <h3>Nawigacja - <em>nav</em></h3>
                 <p>Przykładowe użycie:</p>
                 <nav>
                     <a href="index.html">Strona główna</a>
@@ -141,7 +144,7 @@
                 </nav>
             </article>
             <article>
-                <h3>Obrazki - img</h3> <!-- załączamy obrazek o podanym adresie -->
+                <h3>Obrazki - <em>img</em></h3> <!-- załączamy obrazek o podanym adresie -->
                 <p>Przykładowy obrazek:
                 </p>
                 <img src="warstwy.png" alt="Warstwy strony internetowej" width="500" height="400">
@@ -157,14 +160,14 @@
                 </p>
             </article>
             <article>
-                <h3 class="czerwony">Stylowanie klas - class</h3> <!-- stylowanie z użyciem klasy -->
-                <p class="czerwony">Stylowanie z użyciem klasy .czerwony - Praesent molestie
+                <h3 class="czerwony">Stylowanie klas - <em>class</em></h3> <!-- stylowanie z użyciem klasy -->
+                <p class="czerwony">Stylowanie z użyciem klasy <em>.czerwony</em> - Praesent molestie
                     faucibus libero, sit amet facilisis magna. Nulla in pulvinar dui. Donec pretium
                     ultrices tempor.
                 </p>
             </article>
             <article>
-                <h3>Stylowanie klas - id</h3> <!-- stylowanie z użyciem id - TYLKO JEDNO !!! -->
+                <h3>Stylowanie klas - <em>id</em></h3> <!-- stylowanie z użyciem id - TYLKO JEDNO !!! -->
                 <p id="id">Praesent molestie
                     faucibus libero, sit amet facilisis magna. Nulla in pulvinar dui. Donec pretium
                     ultrices tempor.
@@ -172,7 +175,7 @@
             </article>
             <article>
                 <h3>Reguła important - nie powinna być używana</h3>
-                <p> Powoduje nadpisanie wszystkich styli - wywołanie: !important.
+                <p> Powoduje nadpisanie wszystkich styli - wywołanie: <em>!important</em>.
                 </p>
             </article>
             <article class="my-article">
@@ -186,7 +189,7 @@
                 </p>
             </article>
             <article>
-                <h3>Specyficzność CSS i priorytet stylowania - bliżej </h3>
+                <h3>Specyficzność CSS i priorytet stylowania - od góry do dołu </h3>
                 <p id="text"> Pierwszeństwo ma styl inlinowy lub będący bliżej końca.
                 </p>
             </article>
@@ -275,7 +278,7 @@
             <article>
                 <h3>URL</h3>
                 <p>URL - Uniform Resource Locator
-                    Schemat działanie przegląarki: <br>
+                    Schemat działanie przeglądarki: <br>
                     - wpisany adres w pasku <br>
                     - przeglądarka szuka serwera [DNS] <br>
                     - po znalezieniu serwera odpytuje go o index (jeśli podamy sam adres serwera) - index
@@ -319,7 +322,7 @@
 		alert("Siema! - cudzysłów");
 	</script> -->
     <!-- skrypty przeniesione do pliku main.js -->
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
 </body>
 
 </html>
