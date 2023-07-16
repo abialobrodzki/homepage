@@ -10,3 +10,5 @@
  - use 'contenteditable' to edit all page content, e.g., `body style contenteditable`
  - format document: `CTRL` + `SHIFT` + `P` -> `Format Document` or `SHIFT` + `ALT` + `F`
  - format *.md https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax 
+ - roadmap Frontend Developer: https://roadmap.sh/frontend
+ - roadmap QA: https://roadmap.sh/qa
