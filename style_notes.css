@@ -60,3 +60,120 @@ section a {
     color: red;
     color: purple;
 }
+
+.box {
+    color: #333;
+    background: orangered;
+}
+
+.display-block-link {
+    display: block;
+}
+
+.box-inline {
+    color: #333;
+    background: orangered;
+    display: inline;
+}
+
+.box-inline-block {
+    color: #333;
+    background: orangered;
+    display: inline-block;
+}
+
+.box-inline-size {
+    color: #333;
+    background: orangered;
+    display: inline;
+    width: 200px;
+    height: 200px;
+}
+
+.box-block-size {
+    color: #333;
+    background: orangered;
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+.box-inline-block-size {
+    color: #333;
+    background: orangered;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+.box-inline-size-max {
+    color: #333;
+    background: orangered;
+    display: inline;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.box-block-size-max {
+    color: #333;
+    background: orangered;
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.box-inline-block-size-max {
+    color: #333;
+    background: orangered;
+    display: inline-block;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.box-inline-size-min {
+    color: #333;
+    background: orangered;
+    display: inline;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+.box-block-size-min {
+    color: #333;
+    background: orangered;
+    display: block;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+.box-inline-block-size-min {
+    color: #333;
+    background: orangered;
+    display: inline-block;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+.box-inline-size-overflow {
+    color: #333;
+    background: orangered;
+    display: inline;
+    height: 30px;
+    overflow: hidden; /*hidden/auto/clip/scroll/visible*/
+}
+
+.box-block-size-overflow {
+    color: #333;
+    background: orangered;
+    display: block;
+    height: 30px;
+    overflow: scroll;
+}
+
+.box-inline-block-size-overflow {
+    color: #333;
+    background: orangered;
+    display: inline-block;
+    height: 30px;
+    overflow: auto;
+}

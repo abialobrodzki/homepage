@@ -336,7 +336,191 @@
             </article>
         </section>
         <section>
-            <h2>Moduł IV. cdn...</h2>
+            <h2>Moduł IV. CSS: display, overflow</h2>
+            <article>
+                <h3>Znacznik &lt;div&gt; - <em>box model</em></h3>
+                <p>
+                    Nie ma znaczenia semantycznego, używamy gdy chcemy coś "opakować" (tylko kiedy nie istnieje
+                    odpowiedni
+                    semantyczny znacznik). Opakowanie treści tym znacznikiem jest złe, tylko do styli. <br> Przykład
+                    użycia:
+                </p>
+                <div class="box">Co ten frontend?!</div>
+                <h3>Własność CSS modelu pudełkowego: <em>display: block</em></h3>
+                <p>
+                    Każdy element zajmuje całą szerokość wiersza oraz każdy następny element przerzucany do nowej linii.
+                    <br>Przykład użycia:
+                </p>
+                <div class="box">Co ten frontend?!</div>
+                <div class="box">Co ten frontend?!</div>
+                <div class="box">Co ten frontend?!</div>
+                <div class="box">Co ten frontend?!</div>
+                <p>
+                    Link z włąsnością <em>display: block</em> wyświetlany na całej szerokości, pozostałe elementy od
+                    nowej linii
+                    <br>Przykład użycia:
+                </p>
+                <div class="box">Co ten frontend?!<a href="#" class="display-block-link">link</a>Maciek</div>
+                <div class="box">Co ten frontend?!</div>
+                <div class="box">Co ten frontend?!</div>
+                <div class="box">Co ten frontend?!</div>
+                <h3>Własność CSS modelu pudełkowego: <em>display: inline</em></h3>
+                <p>
+                    Każdy element znajduje się obok siebie (zajmują tyle miejsca jaka jest wymagana przez zawartość)
+                    <br>Przykład użycia:
+                </p>
+                <div class="box-inline">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-inline">Co ten frontend?!</div>
+                <div class="box-inline">Co ten frontend?!</div>
+                <div class="box-inline">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!</div>
+                <p>
+                <h3>Własność CSS modelu pudełkowego: <em>display: inline-block</em></h3>
+                <p>
+                    Przerzuca wszystko za naszym znacznikiem do nowej linii
+                    <br>Przykład użycia:
+                </p>
+                <div class="box-inline-block">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-inline-block">Co ten frontend?!</div>
+                <div class="box-inline-block">Co ten frontend?!</div>
+                <div class="box-inline-block">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!</div>
+                <h3>Własność CSS modelu pudełkowego: <em>width</em> i <em>height</em></h3>
+                <p>
+                    Wyrażona w <em>px</em>. Ustawianie szerokości i wysokości nie działa na elementach
+                    <em>display:inline</em>
+                    <br>Przykład użycia <em>display: block</em>:
+                </p>
+                <div class="box-block-size">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-block-size">Co ten frontend?!</div>
+                <div class="box-block-size">Co ten frontend?!</div>
+                <div class="box-block-size">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!</div>
+                <p>Przykład użycia <em>display: inline</em>:</p>
+                <div class="box-inline-size">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-inline-size">Co ten frontend?!</div>
+                <div class="box-inline-size">Co ten frontend?!</div>
+                <div class="box-inline-size">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!</div>
+                <p>Przykład użycia <em>display: inline-block</em>:</p>
+                <div class="box-inline-block-size">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-inline-block-size">Co ten frontend?!</div>
+                <div class="box-inline-block-size">Co ten frontend?!</div>
+                <div class="box-inline-block-size">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!</div>
+                <h3>Własność CSS modelu pudełkowego: <em>max-width</em> i <em>max-height</em></h3>
+                <p>
+                    Ustawianie wartości szerokości i wysokości na "sztywno" powoduje, że elementy nie zmieniają swoich
+                    wymiarów przy rozciąganiu, zwijaniu obszaru wyswietlania (przy zmniejszaniu może pojawić się
+                    scroll). Brak tych parametrów wymusza dostosowanie
+                    do rozmiaru okna (dzieje się tak automatycznie - elementy zachowują się tak jakby wypełniały całą
+                    dostępną zawartość obszaru strony).
+                    W przypadku parametru <em>max-width</em> i <em>max-height</em> wartość obszaru nie urośnie o więcej
+                    niż jest zadeklarowane
+                    <br>Przykład użycia <em>display: block</em>:
+                </p>
+                <div class="box-block-size-max">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-block-size-max">Co ten frontend?!</div>
+                <div class="box-block-size-max">Co ten frontend?!</div>
+                <div class="box-block-size-max">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten frontend?!Co
+                    ten
+                    frontend?!</div>
+                <p>Przykład użycia <em>display: inline</em>:</p>
+                <div class="box-inline-size-max">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-inline-size-max">Co ten frontend?!</div>
+                <div class="box-inline-size-max">Co ten frontend?!</div>
+                <div class="box-inline-size-max">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten frontend?!Co
+                    ten
+                    frontend?!</div>
+                <p>Przykład użycia <em>display: inline-block</em>:</p>
+                <div class="box-inline-block-size-max">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-inline-block-size-max">Co ten frontend?!</div>
+                <div class="box-inline-block-size-max">Co ten frontend?!</div>
+                <div class="box-inline-block-size-max">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!</div>
+                <h3>Własność CSS modelu pudełkowego: <em>min-width</em> i <em>min-height</em></h3>
+                <p>
+                    W przypadku parametru <em>min-width</em> i <em>min-height</em> deklarujemy wartość minimalną.
+                    <br>Przykład użycia <em>display: block</em>:
+                </p>
+                <div class="box-block-size-min">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-block-size-min">Co ten frontend?!</div>
+                <div class="box-block-size-min">Co ten frontend?!</div>
+                <div class="box-block-size-min">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten frontend?!Co
+                    ten
+                    frontend?!</div>
+                <p>Przykład użycia <em>display: inline</em>:</p>
+                <div class="box-inline-size-min">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-inline-size-min">Co ten frontend?!</div>
+                <div class="box-inline-size-min">Co ten frontend?!</div>
+                <div class="box-inline-size-min">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten frontend?!Co
+                    ten
+                    frontend?!</div>
+                <p>Przykład użycia <em>display: inline-block</em>:</p>
+                <div class="box-inline-block-size-min">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-inline-block-size-min">Co ten frontend?!</div>
+                <div class="box-inline-block-size-min">Co ten frontend?!</div>
+                <div class="box-inline-block-size-min">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!</div>
+                <h3>Własność CSS modelu pudełkowego: <em>overflow</em></h3>
+                <p>
+                    W przypadku parametru <em>overflow</em> określamy co robimy z nadmiarowym tekstem nie mieszczącym
+                    się w obszarze, mamy:<br>
+                    <em>overflow: hidden</em> - ukrywanie tekstu poza obszarem<br>
+                    <em>overflow: auto</em> - pojawia się scroll w miejscu, gdzie zawartość przekracza obszar<br>
+                    <em>overflow: clip</em> - na tym etapie działa jak hidden, przydaje się przy zaawansowanym
+                    formatowaniu<br>
+                    <em>overflow: scroll</em> - pojawia się scroll dla wszystkich elementów<br>
+                    <em>overflow: visisble</em> - niemieszczący się kontent jest wyświetlany poza obszarem<br>
+                    <br>Przykład użycia <em>display: block</em>:
+                </p>
+                <div class="box-block-size-overflow">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-block-size-overflow">Co ten frontend?!</div>
+                <div class="box-block-size-overflow">Co ten frontend?!</div>
+                <div class="box-block-size-overflow">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co
+                    ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <p>Przykład użycia <em>display: inline</em>:</p>
+                <div class="box-inline-size-overflow">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-inline-size-overflow">Co ten frontend?!</div>
+                <div class="box-inline-size-overflow">Co ten frontend?!</div>
+                <div class="box-inline-size-overflow">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co
+                    ten
+                    frontend?<br>!Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <p>Przykład użycia <em>display: inline-block</em>:</p>
+                <div class="box-inline-block-size-overflow">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-inline-block-size-overflow">Co ten frontend?!</div>
+                <div class="box-inline-block-size-overflow">Co ten frontend?!</div>
+                <div class="box-inline-block-size-overflow">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <p><strong>Zwykle nie definiujemy rozmiarów na sztywno, bo wymusza to stosowanie <em>overflow</em>. Brak
+                        zdefiniowanych rozmiarów powoduje automatyczne dostosowywanie się do zawartości, w przypadku
+                        rozmiarów definiowanych na sztywno zawartość może na siebie nachodzić!!!</strong></p>
+            </article>
         </section>
     </main>
     <!-- wyrzucony poza sekcję main bo się powtarza na innych stronach -->
