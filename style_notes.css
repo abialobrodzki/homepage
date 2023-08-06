@@ -159,7 +159,8 @@ section a {
     background: orangered;
     display: inline;
     height: 30px;
-    overflow: hidden; /*hidden/auto/clip/scroll/visible*/
+    overflow: hidden;
+    /*hidden/auto/clip/scroll/visible*/
 }
 
 .box-block-size-overflow {
@@ -176,4 +177,60 @@ section a {
     display: inline-block;
     height: 30px;
     overflow: auto;
+}
+
+.box-no-unit {
+    color: #333;
+    background: orangered;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+.box-pixel-unit {
+    color: #333;
+    background: orangered;
+    height: 10px;
+    width: 10px;
+    overflow: hidden;
+}
+
+.box-percent-unit {
+    color: #333;
+    background: orangered;
+    height: 10%;
+    width: 10%;
+    overflow: hidden;
+}
+
+.box-2 {
+    background: red;
+    height: 50px;
+    width: 50%;
+}
+
+.box-vw-unit {
+    color: #333;
+    background: orangered;
+    width: 10vw;
+    overflow: hidden;
+}
+
+.box-3 {
+    background: red;
+    height: 50px;
+    width: 50vw;
+}
+
+.box-vh-unit {
+    color: #333;
+    background: orangered;
+    height: 10vh;
+    overflow: hidden;
+}
+
+.box-4 {
+    background: red;
+    height: 50vh;
+    width: 50px;
 }

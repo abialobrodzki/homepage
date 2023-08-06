@@ -335,6 +335,7 @@
                 </p>
             </article>
         </section>
+
         <section>
             <h2>Moduł IV. CSS: display, overflow</h2>
             <article>
@@ -346,6 +347,8 @@
                     użycia:
                 </p>
                 <div class="box">Co ten frontend?!</div>
+            </article>
+            <article>
                 <h3>Własność CSS modelu pudełkowego: <em>display: block</em></h3>
                 <p>
                     Każdy element zajmuje całą szerokość wiersza oraz każdy następny element przerzucany do nowej linii.
@@ -375,6 +378,8 @@
                 <div class="box-inline">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
                     frontend?!</div>
                 <p>
+            </article>
+            <article>
                 <h3>Własność CSS modelu pudełkowego: <em>display: inline-block</em></h3>
                 <p>
                     Przerzuca wszystko za naszym znacznikiem do nowej linii
@@ -385,6 +390,8 @@
                 <div class="box-inline-block">Co ten frontend?!</div>
                 <div class="box-inline-block">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
                     frontend?!</div>
+            </article>
+            <article>
                 <h3>Własność CSS modelu pudełkowego: <em>width</em> i <em>height</em></h3>
                 <p>
                     Wyrażona w <em>px</em>. Ustawianie szerokości i wysokości nie działa na elementach
@@ -409,6 +416,8 @@
                 <div class="box-inline-block-size">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
                     frontend?!Co ten
                     frontend?!</div>
+            </article>
+            <article>
                 <h3>Własność CSS modelu pudełkowego: <em>max-width</em> i <em>max-height</em></h3>
                 <p>
                     Ustawianie wartości szerokości i wysokości na "sztywno" powoduje, że elementy nie zmieniają swoich
@@ -440,6 +449,8 @@
                 <div class="box-inline-block-size-max">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
                     frontend?!Co ten
                     frontend?!</div>
+            </article>
+            <article>
                 <h3>Własność CSS modelu pudełkowego: <em>min-width</em> i <em>min-height</em></h3>
                 <p>
                     W przypadku parametru <em>min-width</em> i <em>min-height</em> deklarujemy wartość minimalną.
@@ -465,6 +476,8 @@
                 <div class="box-inline-block-size-min">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
                     frontend?!Co ten
                     frontend?!</div>
+            </article>
+            <article>
                 <h3>Własność CSS modelu pudełkowego: <em>overflow</em></h3>
                 <p>
                     W przypadku parametru <em>overflow</em> określamy co robimy z nadmiarowym tekstem nie mieszczącym
@@ -520,6 +533,111 @@
                 <p><strong>Zwykle nie definiujemy rozmiarów na sztywno, bo wymusza to stosowanie <em>overflow</em>. Brak
                         zdefiniowanych rozmiarów powoduje automatyczne dostosowywanie się do zawartości, w przypadku
                         rozmiarów definiowanych na sztywno zawartość może na siebie nachodzić!!!</strong></p>
+            </article>
+        </section>
+        <section>
+            <h2>Moduł IV. CSS: jednostki</h2>
+            <article>
+                <h3>Brak jednostki</h3>
+                <p>Deklaracja wysokości obszaru <em>height: 0</em> i <em>width: 0</em>
+                    <br>Przykład użycia:
+                </p>
+                <div class="box-no-unit">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-no-unit">Co ten frontend?!</div>
+                <div class="box-no-unit">Co ten frontend?!</div>
+                <div class="box-no-unit">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+            </article>
+            <article>
+                <h3>Pixele - <em>px</em></h3>
+                <p>Pixel to jeden punkt na ekranie, deklaracja wysokości obszaru (jednostka bez spacji) <em>height:
+                        10px</em> i <em>width: 10px</em>
+                    <br>Przykład użycia:
+                </p>
+                <div class="box-pixel-unit">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-pixel-unit">Co ten frontend?!</div>
+                <div class="box-pixel-unit">Co ten frontend?!</div>
+                <div class="box-pixel-unit">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+            </article>
+            <article>
+                <h3>Procenty - <em>%</em></h3>
+                <p>Procenty odnoszą się do szerokości dziedziczonej od rodzica, deklaracja wysokości jest
+                    problematyczna, konieczna jest zawarcie takiej wysokości w <em>body</em> i <em>html</em>,
+                    przykładowa deklaracja <em>height:
+                        10%</em> i <em>width: 10%</em>
+                    <br>Przykład użycia:
+                </p>
+                <div class="box-percent-unit">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-percent-unit">Co ten frontend?!</div>
+                <div class="box-percent-unit">Co ten frontend?!</div>
+                <div class="box-percent-unit">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <p>Przykład pola dziedziczącego 50% szerokości od rodzica</p>
+                <div class="box-2"></div>
+            </article>
+            <article>
+                <h3>Szerokość ekranu viewport width - <em>vw</em></h3>
+                <p>Szerokość okna w jakim wyswietlany jest dokument, odnosi się w % do rozmiarów ekranu, przykładowa
+                    deklaracja <em>width: 10vw</em>
+                    <br>Przykład użycia:
+                </p>
+                <div class="box-vw-unit">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-vw-unit">Co ten frontend?!</div>
+                <div class="box-vw-unit">Co ten frontend?!</div>
+                <div class="box-vw-unit">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <p>Przykład pola 50vw szerokości ekranu (height: 50px; width: 50vw;)</p>
+                <div class="box-3"></div>
+            </article>
+            <article>
+                <h3>Szerokość ekranu viewport height - <em>vh</em></h3>
+                <p>Wysokość okna w jakim wyswietlany jest dokument, odnosi się w % do rozmiarów ekranu, przykładowa
+                    deklaracja <em>height: 10vh</em>
+                    <br>Przykład użycia:
+                </p>
+                <div class="box-vh-unit">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-vh-unit">Co ten frontend?!</div>
+                <div class="box-vh-unit">Co ten frontend?!</div>
+                <div class="box-vh-unit">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <p>Przykład pola 50vh wysokości ekranu (height: 50vh; width: 50px;)</p>
+                <div class="box-4"></div>
             </article>
         </section>
     </main>
