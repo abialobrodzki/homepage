@@ -234,3 +234,117 @@ section a {
     height: 50vh;
     width: 50px;
 }
+
+.box-padding-0 {
+    color: #333;
+    background: orangered;
+    overflow: hidden;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.box-padding-1 {
+    color: #333;
+    background: orangered;
+    overflow: hidden;
+    padding: 15px 10px 15px 10px;
+}
+
+.box-padding-2 {
+    color: #333;
+    background: orangered;
+    overflow: hidden;
+    padding: 15px 10px;
+}
+
+.box-padding-3 {
+    color: #333;
+    background: orangered;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.box-5 {
+    background: red;
+    overflow: hidden;
+}
+
+.box-border-1 {
+    color: #333;
+    background: orangered;
+    overflow: hidden;
+    padding: 5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: aquamarine;
+}
+
+.box-border-2 {
+    color: #333;
+    background: orangered;
+    overflow: hidden;
+    padding: 5px;
+    border: 10px solid aquamarine;
+}
+
+.box-border-3 {
+    color: #333;
+    background: orangered;
+    overflow: hidden;
+    padding: 5px;
+    border: 10px solid aquamarine;
+    border-top: 15px solid yellow;
+}
+
+.box-border-4 {
+    color: #333;
+    background: orangered;
+    overflow: hidden;
+    padding: 5px;
+    border: 10px solid aquamarine;
+    border-top: 15px solid yellow;
+    border-radius: 25%;
+}
+
+.box-border-5 {
+    color: #333;
+    background: orangered;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.box-6 {
+    background: red;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    padding: 20px;
+    color: #fff;
+}
+
+.box-7 {
+    background: red;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    padding: 20px;
+    color: #fff;
+    margin: 20px;
+}
+
+.box-8 {
+    background: red;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 4px solid #fff;
+    padding: 20px;
+    color: #fff;
+    margin: 20px auto;
+}

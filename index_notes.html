@@ -367,6 +367,8 @@
                 <div class="box">Co ten frontend?!</div>
                 <div class="box">Co ten frontend?!</div>
                 <div class="box">Co ten frontend?!</div>
+            </article>
+            <article>
                 <h3>Własność CSS modelu pudełkowego: <em>display: inline</em></h3>
                 <p>
                     Każdy element znajduje się obok siebie (zajmują tyle miejsca jaka jest wymagana przez zawartość)
@@ -638,6 +640,218 @@
                     frontend?!<br></div>
                 <p>Przykład pola 50vh wysokości ekranu (height: 50vh; width: 50px;)</p>
                 <div class="box-4"></div>
+            </article>
+        </section>
+        <section>
+            <h2>Moduł IV. CSS: box model</h2>
+            <article>
+                <h3>Box model</h3>
+                <p>Warstwy box model:<br>
+                    - element - jakaś treść<br>
+                    - padding - definiuje odległość pomiędzy elementem a borderem<br>
+                    - border - ramka<br>
+                    - margin - na zewnątrz elementu, określa o ile dany element ma być oddalony od innych elementów<br>
+                    <br>Schemat:
+                </p>
+                <img src="box-model.png" alt="Schemat box-model" width="500" height="250">
+            </article>
+            <article>
+                <h3>Padding</h3>
+                <p>Oddala treść od krawędzi elementu, deklaracja paddingu w px - <em>padding: 16px</em>. Może być
+                    zapisany w formie skrótowej (shorthand) lub pełnej:<br>
+                    - pełny: <em>padding-top;</em> <em>padding-right;</em> <em>padding-bottom;</em>
+                    <em>padding-left;</em><br>
+                    - skrótowy: <em>padding:top right bottom left;</em><br>
+                    - lustrzany(wartości dobierane parami): <em>padding:top-bottom right-left;</em><br>
+                    - wszystkie wartości takie same: <em>padding:top-bottom-right-left;</em>
+                </p>
+            </article>
+            <article>
+                <h3>Przykład użycia - padding pełny:</h3>
+                <div class="box-padding-0">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-5">Co ten frontend?!</div>
+                <div class="box-padding-0">Co ten frontend?!</div>
+                <div class="box-5">Co ten frontend?!</div>
+                <div class="box-padding-0">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <div class="box-5">Co ten frontend?!</div>
+            </article>
+            <article>
+                <h3>Przykład użycia - padding skrótowy:</h3>
+                <div class="box-padding-1">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-5">Co ten frontend?!</div>
+                <div class="box-padding-1">Co ten frontend?!</div>
+                <div class="box-5">Co ten frontend?!</div>
+                <div class="box-padding-1">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <div class="box-5">Co ten frontend?!</div>
+            </article>
+            <article>
+                <h3>Przykład użycia - padding lustrzany:</h3>
+                <div class="box-padding-2">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-5">Co ten frontend?!</div>
+                <div class="box-padding-2">Co ten frontend?!</div>
+                <div class="box-5">Co ten frontend?!</div>
+                <div class="box-padding-2">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <div class="box-5">Co ten frontend?!</div>
+            </article>
+            <article>
+                <h3>Przykład użycia - padding all-in-one:</h3>
+                <div class="box-padding-3">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-5">Co ten frontend?!</div>
+                <div class="box-padding-3">Co ten frontend?!</div>
+                <div class="box-5">Co ten frontend?!</div>
+                <div class="box-padding-3">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <div class="box-5">Co ten frontend?!</div>
+            </article>
+            <article>
+                <h3>Border</h3>
+                <p>Ramka. Może być zapisana w formie skrótowej (shorthand) lub pełnej:<br>
+                    - pełny: <em>border-width;</em> <em>border-style;</em> <em>border-color;</em><br>
+                    - skrótowy: <em>border:width-style-color;</em><br>
+                    - z definicją kierunku: <em>border-top;</em> <em>border-bottom;</em> <em>border-right;</em>
+                    <em>border-left;</em><br>
+                    - zaokrąglenie krawędzi (wyrażone w <em>px</em> lub <em>%</em>): <em>border-radius;</em>
+                </p>
+            </article>
+            <article>
+                <h3>Przykład użycia - border pełny:</h3>
+                <div class="box-border-1">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-5">Co ten frontend?!</div>
+                <div class="box-border-1">Co ten frontend?!</div>
+                <div class="box-5">Co ten frontend?!</div>
+                <div class="box-border-1">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <div class="box-5">Co ten frontend?!</div>
+            </article>
+            <article>
+                <h3>Przykład użycia - border skrótowy:</h3>
+                <div class="box-border-2">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-5">Co ten frontend?!</div>
+                <div class="box-border-2">Co ten frontend?!</div>
+                <div class="box-5">Co ten frontend?!</div>
+                <div class="box-border-2">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <div class="box-5">Co ten frontend?!</div>
+            </article>
+            <article>
+                <h3>Przykład użycia - border z definicją kierunku:</h3>
+                <div class="box-border-3">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-5">Co ten frontend?!</div>
+                <div class="box-border-3">Co ten frontend?!</div>
+                <div class="box-5">Co ten frontend?!</div>
+                <div class="box-border-3">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <div class="box-5">Co ten frontend?!</div>
+            </article>
+            <article>
+                <h3>Przykład użycia - zaokrąglanie krawędzi border-radius:</h3>
+                <div class="box-border-4">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-6">Co ten frontend?!</div>
+                <div class="box-border-4">Co ten frontend?!</div>
+                <div class="box-6">Co ten frontend?!</div>
+                <div class="box-border-5">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <div class="box-6">Co ten frontend?!</div>
+            </article>
+            <article>
+                <h3>Margin</h3>
+                <p>Margines, jest zapisywany tak samo jak padding, deklaracja <em>margin: 20px</em>. Marginesy nakładają
+                    się wzajemnie. Możliwe jest również wyśrodkowanie (właścowość lustrzana) poprzez <em>margin: 20px
+                        auto</em><br>
+                </p>
+            </article>
+            <article>
+                <h3>Przykład użycia - margin</h3>
+                <div class="box-border-4">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-7">Co ten frontend?!</div>
+                <div class="box-border-4">Co ten frontend?!</div>
+                <div class="box-7">Co ten frontend?!</div>
+                <div class="box-border-5">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <div class="box-7">Co ten frontend?!</div>
+            </article>
+            <article>
+                <h3>Przykład użycia - margin auto</h3>
+                <div class="box-border-4">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-8">Co ten frontend?!</div>
+                <div class="box-border-4">Co ten frontend?!</div>
+                <div class="box-8">Co ten frontend?!</div>
+                <div class="box-border-5">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <div class="box-8">Co ten frontend?!</div>
             </article>
         </section>
     </main>
