@@ -853,6 +853,53 @@
                     frontend?!<br></div>
                 <div class="box-8">Co ten frontend?!</div>
             </article>
+            <article>
+                <h3>Box-sizing</h3>
+                <p>Modele box-sizing:<br>
+                    - content-box - wartość domyślna, wymiary deklarowane ręcznie, wymiary zmieniają się wraz z
+                    wymiarami elementu<br>
+                    - border-box - wymiary są ustawiane na cały element, ustawiane wymiary szerokość i wysokość są
+                    maksymalne, zaletą tego podejścia jest to, że wymiary można przewidzieć. Dlatego obecnie ten model
+                    jest popularny i dodawany do wszystkich elementów - eliminuje konieczność obliczeń, od ogólnej
+                    wysokości odejmowane wysokość paddingu oraz border. <br>
+                    <br>Schemat:
+                </p>
+                <img src="box-sizing.png" alt="Schemat box-model" width="600" height="250">
+            </article>
+            <article>
+                <h3>Przykład użycia - content-box</h3>
+                <div class="box-border-5">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-size-1">Co ten frontend?!</div>
+                <div class="box-border-5">Co ten frontend?!</div>
+                <div class="box-size-1">Co ten frontend?!</div>
+                <div class="box-border-5">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <div class="box-size-1">Co ten frontend?!</div>
+            </article>
+            <article>
+                <h3>Przykład użycia - border-box <em>box-sizing: border-box;</em></h3>
+                <div class="box-border-5">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-size-2">Co ten frontend?!</div>
+                <div class="box-border-5">Co ten frontend?!</div>
+                <div class="box-size-2">Co ten frontend?!</div>
+                <div class="box-border-5">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <div class="box-size-2">Co ten frontend?!</div>
+            </article>
         </section>
     </main>
     <!-- wyrzucony poza sekcję main bo się powtarza na innych stronach -->
