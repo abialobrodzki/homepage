@@ -900,6 +900,270 @@
                     frontend?!<br></div>
                 <div class="box-size-2">Co ten frontend?!</div>
             </article>
+            <article>
+                <h3>Position, float</h3>
+                <p>Warianty pozycji:<br>
+                    - <em>position: static;</em> (statyczna) - rozmieszczenie uzależnione od przeglądarki, nie trzeba
+                    definiować - tryb domyślny<br>
+                    - <em>position: relative;</em> - pozwala stworzyć przestrzeń względem której możemy rozmieszczać
+                    inne elementy<br>
+                    - <em>position: absolute;</em> (absolutne pozycjonowanie wg elementu relative) - korzysta z
+                    ustawionej przestrzeni relative, według niej następuje
+                    rozmieszczanie, w tym celu można używać up-right-bottom-left (liczone od krawędzi) - romieszczenie
+                    nie zmieni się po zmianie rozmiarów elementu do którego się odnosimy<br>
+                    - <em>z-index;</em> (kolejność wyświetlania warstw) - pozwala na priorytet wyświetlania
+                    elementów<br>
+                    - <em>position: fixed;</em> odpowiada za przyklejenie elementu do viewportu (okna przeglądarki) np.
+                    w aplikacjach mobilnych do przyklejenia przycisku menu<br>
+                    - <em>position: sticky;</em> możliwość przyklejenia, doczepienia elementu, który działa wewnątrz
+                    rodzica (w przeciwnieństwie do fixed) np. do przyklejania nagłówków tekstów - nie zadziała, gdy
+                    zdefiniowany <em>overflow</em> oraz
+                    brakuje parametru kierunku np. <em>top</em><br>
+                    - <em>float</em> element jest opływany przez treść znajdujący się po nim, <strong>nie jest zalecane
+                        stosowanie, nie używany do budowania layoutu!!!</strong><br>
+                    - <em>clear</em> czyści floaty, powoduje, że treść wpada poniżej<br>
+                </p>
+            </article>
+            <article>
+                <h3>Przykład użycia - <em>position: static;</em></h3>
+                <div class="box-border-5">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-position-static">Co ten frontend?!</div>
+                <div class="box-border-5">Co ten frontend?!</div>
+                <div class="box-position-static">Co ten frontend?!</div>
+                <div class="box-border-5">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <div class="box-position-static">Co ten frontend?!</div>
+            </article>
+            <article>
+                <h3>Przykład użycia - <em>position: relative;</em></h3>
+                <div class="box-border-5">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-position-relative">Co ten frontend?!</div>
+                <div class="box-border-5">Co ten frontend?!</div>
+                <div class="box-position-relative">Co ten frontend?!</div>
+                <div class="box-border-5">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <div class="box-position-relative">Co ten frontend?!</div>
+            </article>
+            <article>
+                <h3>Przykład użycia - <em>position: absolute;</em></h3>
+                <div class="box-border-5">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-position-relative">Co ten frontend?!<div class="absolute">absolute</div>
+                </div>
+                <div class="box-border-5">Co ten frontend?!</div>
+                <div class="box-position-relative">Co ten frontend?!<div class="absolute">absolute</div>
+                </div>
+                <div class="box-border-5">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <div class="box-position-relative">Co ten frontend?! <div class="absolute">absolute</div>
+                </div>
+            </article>
+            <article>
+                <h3>Przykład użycia - <em>z-index;</em></h3>
+                <div class="box-border-5">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-position-relative">Co ten frontend?!<div class="absolute">absolute</div>
+                    <div class="absolute-2">absolute</div>
+                </div>
+                <div class="box-border-5">Co ten frontend?!</div>
+                <div class="box-position-relative">Co ten frontend?!<div class="absolute">absolute</div>
+                    <div class="absolute-2">absolute</div>
+                </div>
+                <div class="box-border-5">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <div class="box-position-relative">Co ten frontend?! <div class="absolute">absolute</div>
+                    <div class="absolute-2">absolute</div>
+                </div>
+            </article>
+            <article>
+                <h3>Przykład użycia - <em>position: fixed;</em></h3>
+                <div class="box-border-5">Co ten frontend?!<a href="#">link</a>Maciek</div>
+                <div class="box-position-relative">Co ten frontend?!<div class="fixed">fixed</div>
+                    <div class="fixed-2">fixed</div>
+                </div>
+                <div class="box-border-5">Co ten frontend?!</div>
+                <div class="box-position-relative">Co ten frontend?!<div class="fixed">fixed</div>
+                    <div class="fixed-2">fixed</div>
+                </div>
+                <div class="box-border-5">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
+                <div class="box-position-relative">Co ten frontend?! <div class="fixed">fixed</div>
+                    <div class="fixed-2">fixed</div>
+                </div>
+            </article>
+            <article>
+                <h3>Przykład użycia - <em>position: sticky;</em></h3>
+                <div class="box-border-sticky">
+                    <div class="sticky">Sticky</div>Co ten frontend?!<a href="#">link</a>Maciek
+                </div>
+                <div class="box-position-relative">Co ten frontend?!<div class="absolute">absolute</div>
+                    <div class="absolute-2">absolute</div>
+                </div>
+                <div class="box-border-sticky">
+                    <div class="sticky">Sticky</div>Co ten frontend?!
+                </div>
+                <div class="box-position-relative">Co ten frontend?!<div class="absolute">absolute</div>
+                    <div class="absolute-2">absolute</div>
+                </div>
+                <div class="box-border-sticky">
+                    <div class="sticky">Sticky</div>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>
+                </div>
+                <div class="box-position-relative">Co ten frontend?! <div class="absolute">absolute</div>
+                    <div class="absolute-2">absolute</div>
+                </div>
+            </article>
+            <article>
+                <h3>Przykład użycia - <em>float</em></h3>
+                <div class="box-border-sticky">
+                    <div class="sticky">Sticky</div>
+                    <div class="float">floating</div>
+                    <div class="float-2">floating</div>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>
+                </div>
+                <div class="box-position-relative">Co ten frontend?! <div class="absolute">absolute</div>
+                    <div class="absolute-2">absolute</div>
+                </div>
+            </article>
+            <article>
+                <h3>Przykład użycia - <em>clear</em></h3>
+                <div class="box-border-sticky">
+                    <div class="sticky">Sticky</div>
+                    <div class="float">floating</div>
+                    <div class="float-2">floating</div>
+                    <div class="clear"></div>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>
+                </div>
+                <div class="box-position-relative">Co ten frontend?! <div class="absolute">absolute</div>
+                    <div class="absolute-2">absolute</div>
+                </div>
+            </article>
         </section>
     </main>
     <!-- wyrzucony poza sekcję main bo się powtarza na innych stronach -->
