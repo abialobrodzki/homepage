@@ -1,5 +1,19 @@
 /* NOTATKI */
 /* przykłodowe stylowanie */
+
+/* fragment stylowania uzupełniający normalizację stylu normalize.css */
+/* html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+} */
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+
 h1 {
     color: whitesmoke;
     background: rgb(255, 0, 0);
@@ -478,4 +492,12 @@ section a {
 
 .clear {
     clear: both;
+}
+
+.style-reset {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    /* outline: none; */
+    /* wyłączenie outlina usuwa podświetlenie linku podczas tabulacji przyciskiem TAB */
 }

@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WTF: Co ten frontend</title>
+    <!-- <link href="normalize.css" rel="stylesheet" type="text/css"> -->
+    <!-- przykład użycia normalizacji -->
     <link href="style_notes.css" rel="stylesheet" type="text/css">
     <!-- reguły css wewnątrz pliku - dokumentacja https://www.w3.org/TR/CSS/ -->
     <!-- <style> 
@@ -1201,6 +1203,105 @@
                 </p>
             </article>
         </section>
+        <section>
+            <h2>Moduł IV. Normalizacja vs Reset</h2>
+            <article>
+                <h3>Ujednolicanie styli - Reset</h3>
+                <p>W tej chwili rzadko używana technika polegająca na implementacji stylu:<br>
+                    <em>* {<br>
+                        margin: 0;<br>
+                        padding: 0;<br>
+                        font-size: 16px;<br>
+                        outline: none; /*wyłączenie podświetlenia tabulacji linków - nie używać!*/<br>
+                        }<br>
+                        ul, ol {<br>
+                        list-style:none;<br>
+                        }<br></em>
+                    Przykład resetu styli:<br>
+                </p>
+                <div class="style-reset">
+                    <div class="style-reset">Sticky</div>
+                    <div class="style-reset">floating</div>
+                    <div class="style-reset">floating</div>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>
+                </div>
+                <div class="style-reset">Co ten frontend?! <div class="style-reset">absolute</div>
+                    <div class="style-reset">absolute</div>
+            </article>
+            <article>
+                <h3>Ujednolicanie styli - Normalizacja</h3>
+                <p>Ujednolica style pomiędzy przeglądarkami z wykorzystaniem standardów - link do projektu
+                    <a href="https://necolas.github.io/normalize.css/" target="_blank">normalize.css:</a><br>
+                    Dodawany do projektu jako np. plik <em>normalize.css</em> oraz dodana dodatkowa deklaracja
+                    stylu:<br>
+                    <br><strong><em>&lt;link href="normalize.css" rel="stylesheet" type="text/css"&gt;</em></strong><br>
+                    <br>Jako, że domyślnie usunięty jest padding, dla poszczególnych sekcji możemy go dodać. Przykład
+                    dodania paddingu po normalizacji styli:<br>
+                    <em>header {<br>
+                        padding: 16px;<br>
+                        }<br>
+                        h1 {<br>
+                        color: darkgreen;<br>
+                        padding: 16px;<br>
+                        }<br>
+                        section {<br>
+                        padding: 16px;<br>
+                        }<br>
+                        footer {<br>
+                        padding: 16px;<br>
+                        }<br></em>
+                    <br>Dodatkowo możemy w stylach uzupełnić normalizację wielkości elementów poprzez dodanie:<br>
+                    <em>html {<br>
+                        box-sizing: border-box;<br>
+                        }<br>
+                        *, *:before, *:after {<br>
+                        box-sizing: inherit;<br>
+                        }<br></em>
+                    Najlepiej właśnie dodawać to poza plikiem <em>normalize.css</em>, co ułatwi jego poźniejszą
+                    aktualizację w przypadku zmian. <strong>Konieczne jest dodanie normalizacji do każdej
+                        strony!</strong>
+                </p>
+            </article>
+        </section>
     </main>
     <!-- wyrzucony poza sekcję main bo się powtarza na innych stronach -->
     <footer>Footer - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan, mi at ultrices <a
@@ -1220,3 +1321,4 @@
 <!-- walidacja html -> https://validator.w3.org/nu/#textarea -->
 <!-- tablica Trello -> https://trello.com/b/3f3jdOM3/wtf-szkolenie -->
 <!-- spis atrybutów globalnych -> https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes -->
+<!-- standard normalziacji -> https://necolas.github.io/normalize.css/ -->
