@@ -501,3 +501,27 @@ section a {
     /* outline: none; */
     /* wyłączenie outlina usuwa podświetlenie linku podczas tabulacji przyciskiem TAB */
 }
+
+/* style wg BEM */
+.navigation {
+    padding: 16px;
+    background: blue;
+}
+
+.navigation__link {
+    color: white;
+}
+
+.article {
+    background: #dcdcdc;
+    margin-bottom: 16px;
+}
+
+.article__header {
+    color: #044550;
+}
+
+.article__header--special {
+    color: tomato;
+    margin-left: 32px;
+}

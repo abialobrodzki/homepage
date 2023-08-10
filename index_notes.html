@@ -26,11 +26,11 @@
 
 <body> <!-- jak chcemy zawinąć dłuższy tekst to, 'view -> Word Wrap' lub 'ALT' + 'Z' -->
     <header> <!-- wyrzucony poza sekcję main bo się powtarza na innych stronach -->
-        <nav>
-            <a href="index.html">Strona główna</a>
-            <a href="index_notes.html">Notatki z WTF</a>
-            <a href="index_homework.html">Praca domowa</a>
-            <a href="index_test.html">Strona test</a>
+        <nav class="navigation"> <!-- BEM - przykład dla nawigacji -->
+            <a class="navigation__link" href="index.html">Strona główna</a>
+            <a class="navigation__link" href="index_notes.html">Notatki z WTF</a>
+            <a class="navigation__link" href="index_homework.html">Praca domowa</a>
+            <a class="navigation__link" href="index_test.html">Strona test</a>
         </nav>
     </header>
     <main> <!-- główna część dokumentu - jest to UNIKATOWA TREŚĆ - nie może się powtarzać -->
@@ -1266,6 +1266,7 @@
                 </div>
                 <div class="style-reset">Co ten frontend?! <div class="style-reset">absolute</div>
                     <div class="style-reset">absolute</div>
+                </div>
             </article>
             <article>
                 <h3>Ujednolicanie styli - Normalizacja</h3>
@@ -1300,6 +1301,63 @@
                     aktualizację w przypadku zmian. <strong>Konieczne jest dodanie normalizacji do każdej
                         strony!</strong>
                 </p>
+            </article>
+        </section>
+        <section>
+            <h2>Moduł IV. Serwer lokalny</h2>
+            <article>
+                <h3>Live Server</h3>
+                <p>Można wykorzystać rozszerzenie do Visual Studio Code <a
+                        href="https://github.com/ritwickdey/vscode-live-server-plus-plus">Live Server</a>, co pozwala na
+                    postawienie strony na serwerze lokalnym. Pozwala również na uruchomienie strony na smartfonie -
+                    testowanie w widoku mobilnym.<br>
+                    Konieczne jest ustalanie adresu IP w celu udostępnienia np. <strong>&lt;adres
+                        IP&gt;:5500/index.html</strong> (gdzie 5500 to port)<br>
+                    Ustalenie adresu IP w Windows: wiersz poleceń -> polecenie: <em>ipconfig</em> -> IPv4 Address.</p>
+            </article>
+        </section>
+        <section class="section"> <!-- BEM - przykład dla sekcjiu -->
+            <h2 class="section__header">Moduł IV. BEM</h2>
+            <article class="article"> <!-- BEM - przykład dla artykułu -->
+                <h3 class="article__header">BEM - Block Element Modifier</h3>
+                <p class="article__descritpion">Specjalny model nazywania klas css, który wprowadza do projektu
+                    porządek:<br>
+                    - Block - nadrzędnu element;<br>
+                    - Element - częśc bloku(nie musi być bezpośrednim dzieckiem, ale musi się odnosić do elementu);<br>
+                    - Modifier - modyfikator - jeśli element występuje w kilku wariantach tworzymy dodatkową klasę;<br>
+                    <br>Sposób zapisu BEM: <strong>block__element--modifier</strong>. <em>Block</em> jest zawsze,
+                    <em>element</em>
+                    dodajemy, jeżeli występuje element, a <em>modifier</em> różnicuje elementy. W przypadku BEM:<br>
+                    - szukamy elementów na stronie i dzielimy je na bloki<br>
+                    - myślimy o elementach składowych / robimy analizę-selekcję - szukamy elementów powtarzalnych i unikalnych<br>
+                    - tworzymy dwie klasy jeśli element ma modyfikator (w modyfikatorze zmieniamy tylko unikalne dla
+                    niego wartości, nie przepisujemy rzeczy z klasy bazowej)
+                    Przykłady użycia:<br>
+                </p>
+                <img src="BEM_html.png" class="article__image" alt="BEM w html" width="650" height="400"><br>
+                <img src="BEM_css.png" class="article__image" alt="BEM w css" width="300" height="400">
+                <p class="article__descritpion">Przykład na fragmencie projektu poniżej.</p>
+            </article>
+            <article class="article"> <!-- BEM - przykład dla artykułu -->
+                <h3 class="article__header article__header--special">Test - przykład BEM</h3>
+                <p class="article__descritpion">Tekst Tekst Tekst... Przykład użycia formatowania wg modelu BEM.
+                    Przykład użycia formatowania BEM.
+                    Przykład użycia formatowania wg modelu BEM. Przykład użycia formatowania BEM.
+                    <br>Przykład użycia:
+                </p>
+                <div class="article__descritpion">Co ten frontend?!<a href="#" class="article__link">link</a>Maciek
+                </div>
+                <div class="article__descritpion">Co ten frontend?!</div>
+                <div class="article__descritpion">Co ten frontend?!</div>
+                <div class="article__descritpion">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br></div>
             </article>
         </section>
     </main>
