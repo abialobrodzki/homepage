@@ -1,3 +1,28 @@
+/* uzupełnienie normalizacji - normalize.css v8.0.1 */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+header {
+	padding: 16px;
+}
+
+section {
+	padding: 16px;
+}
+
+footer {
+	padding: 16px;
+}
+
 body {
 	background: #fefefe;
 }

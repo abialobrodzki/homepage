@@ -2,7 +2,7 @@
 /* przykłodowe stylowanie */
 
 /* fragment stylowania uzupełniający normalizację stylu normalize.css */
-/* html {
+html {
     box-sizing: border-box;
 }
 
@@ -10,9 +10,22 @@
 *:before,
 *:after {
     box-sizing: inherit;
-} */
+}
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+header {
+    padding: 16px;
+    background-color: red;
+}
+
+section {
+    padding: 16px;
+}
+
+footer {
+    padding: 16px;
+}
 
 h1 {
     color: whitesmoke;
