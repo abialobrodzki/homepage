@@ -34,8 +34,9 @@
         </nav>
     </header>
     <main> <!-- główna część dokumentu - jest to UNIKATOWA TREŚĆ - nie może się powtarzać -->
-        <header id="top"> <!-- nagłówek dokumetu/sekcji/artykuł -->
-            <h1>Notatki ze szkolenia WTF: Co Ten Frontend. Nagłówek tekstowy header - &lt;h1&gt;</h1>
+        <header class="page-header" id="top"> <!-- nagłówek dokumetu/sekcji/artykuł -->
+            <h1 class="page-header__heading page-header__heading--js">Notatki ze szkolenia WTF: Co Ten Frontend.
+                Nagłówek tekstowy header - &lt;h1&gt;</h1>
             <!-- tekstowy nagłówek tytułowy h1-h6 -->
         </header>
         <section> <!-- sekcja dokumentu -->
@@ -1316,11 +1317,11 @@
                     Ustalenie adresu IP w Windows: wiersz poleceń -> polecenie: <em>ipconfig</em> -> IPv4 Address.</p>
             </article>
         </section>
-        <section class="section"> <!-- BEM - przykład dla sekcjiu -->
+        <section class="section"> <!-- BEM - przykład dla sekcji -->
             <h2 class="section__header">Moduł IV. BEM</h2>
             <article class="article"> <!-- BEM - przykład dla artykułu -->
                 <h3 class="article__header">BEM - Block Element Modifier</h3>
-                <p class="article__descritpion">Specjalny model nazywania klas css, który wprowadza do projektu
+                <p class="article__description">Specjalny model nazywania klas css, który wprowadza do projektu
                     porządek:<br>
                     - Block - nadrzędnu element;<br>
                     - Element - częśc bloku(nie musi być bezpośrednim dzieckiem, ale musi się odnosić do elementu);<br>
@@ -1329,27 +1330,28 @@
                     <em>element</em>
                     dodajemy, jeżeli występuje element, a <em>modifier</em> różnicuje elementy. W przypadku BEM:<br>
                     - szukamy elementów na stronie i dzielimy je na bloki<br>
-                    - myślimy o elementach składowych / robimy analizę-selekcję - szukamy elementów powtarzalnych i unikalnych<br>
+                    - myślimy o elementach składowych / robimy analizę-selekcję - szukamy elementów powtarzalnych i
+                    unikalnych<br>
                     - tworzymy dwie klasy jeśli element ma modyfikator (w modyfikatorze zmieniamy tylko unikalne dla
                     niego wartości, nie przepisujemy rzeczy z klasy bazowej)
                     Przykłady użycia:<br>
                 </p>
                 <img src="BEM_html.png" class="article__image" alt="BEM w html" width="650" height="400"><br>
                 <img src="BEM_css.png" class="article__image" alt="BEM w css" width="300" height="400">
-                <p class="article__descritpion">Przykład na fragmencie projektu poniżej.</p>
+                <p class="article__description">Przykład na fragmencie projektu poniżej.</p>
             </article>
             <article class="article"> <!-- BEM - przykład dla artykułu -->
                 <h3 class="article__header article__header--special">Test - przykład BEM</h3>
-                <p class="article__descritpion">Tekst Tekst Tekst... Przykład użycia formatowania wg modelu BEM.
+                <p class="article__description">Tekst Tekst Tekst... Przykład użycia formatowania wg modelu BEM.
                     Przykład użycia formatowania BEM.
                     Przykład użycia formatowania wg modelu BEM. Przykład użycia formatowania BEM.
                     <br>Przykład użycia:
                 </p>
-                <div class="article__descritpion">Co ten frontend?!<a href="#" class="article__link">link</a>Maciek
+                <div class="article__description">Co ten frontend?!<a href="#" class="article__link">link</a>Maciek
                 </div>
-                <div class="article__descritpion">Co ten frontend?!</div>
-                <div class="article__descritpion">Co ten frontend?!</div>
-                <div class="article__descritpion">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                <div class="article__description">Co ten frontend?!</div>
+                <div class="article__description">Co ten frontend?!</div>
+                <div class="article__description">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
                     frontend?!Co ten
                     frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
                     frontend?!Co ten
@@ -1358,6 +1360,38 @@
                     frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
                     frontend?!Co ten
                     frontend?!<br></div>
+            </article>
+        </section>
+        <section class="section">
+            <h2 class="section__header">Moduł IV. DOM</h2>
+            <article class="article">
+                <h3 class="article__header">DOM - Document Object Model</h3>
+                <p class="article__description">DOM - Obiektowy Model Dokumentów, widoczny z poziomu DevTools. Jest to
+                    swego rodzaju pomost pomiędzy JS a HTML. DOM to złożony w przeglądarce HTML, który może być
+                    modyfikowany przez JS. UWAGA: <strong>Plik HTML ani źródło strony to nie jest DOM.</strong><br>
+                    Selektor JS (działa tak samo jak w CSS):<br>
+                    Funkcja <em><strong>document.querySelector('.selector')</strong></em> odpowiednik $('.selector') w
+                    języku
+                    jQuery. Funkja querySelector zwraca node(węzeł) z HTML'a, a selektor zapisywany zgodnie z CSS.<br>
+                    Stosując BEM elementy powinny być oznaczane w taki sposób (dotyczy elementów odnoszących się do
+                    JS):<br>
+                    <em><strong>block__element--js</strong></em><br>
+                    Tego elementu nie stylujemy w pliku css, bo jest on wykonywany przez skrypt i po to żeby było
+                    bardziej czytelnie(ułatwia identyfikację, pomaga usuwać problemy).<br>
+                    Użycie <em>defer</em> pozwala na ukrycie zawartości węzła, przykład poniżej:<br>
+                    &lt;script <strong>defer</strong> src="index_notes.js"&gt;&lt;/script&gt;<br>
+                    Przykład użycia - dla nagłówka h1:<br>
+                    <strong>&lt;h1 class="page-header__heading page-header__heading--js"&gt;Notatki ze szkolenia WTF: Co
+                        Ten
+                        Frontend. Nagłówek tekstowy header - &lt;h1&gt;&lt;/h1&gt;</strong><br>
+                    Składnia operacji JS na elemencie:<br>
+                    <em><strong>nazwaZmiennejQuerySelector.innerHTML = 'treść'</strong></em> - modyfikacja wyświetlonej
+                    treści<br>
+                    Przykład operacji JS:<br>
+                    <em>const header = document.querySelector('.page-header__heading--js');<br>
+                        header.innerHTML = 'Hej';<br>
+                        header.style.color = 'yellow';<br></em>
+                </p>
             </article>
         </section>
     </main>
@@ -1372,6 +1406,7 @@
 	</script> -->
     <!-- skrypty przeniesione do pliku main.js -->
     <!-- <script src="main.js"></script> -->
+    <script defer src="index_notes.js"></script>
 </body>
 
 </html>
