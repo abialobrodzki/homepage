@@ -516,13 +516,23 @@ section a {
 }
 
 /* style wg BEM */
-.navigation {
-    padding: 16px;
-    background: blue;
+.page-navigation {
+	background: rgb(95, 82, 82);
+	padding: 20px;
+	border-radius: 15px;
 }
 
-.navigation__link {
-    color: white;
+.page-navigation__link {
+	color: whitesmoke;
+	padding: 5px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-decoration: none;
+	background: black;
+	border-width: 1px;
+	border-style: solid;
+	border-color: whitesmoke;
+	border-radius: 20px;
 }
 
 .article {

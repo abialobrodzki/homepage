@@ -12,40 +12,44 @@
 
 <body>
 	<header>
-		<nav>
-			<a href="index.html">Strona główna</a>
-			<a href="index_notes.html">Notatki z WTF</a>
-			<a href="index_homework.html">Praca domowa</a>
-			<a href="index_test.html">Strona test</a>
+		<nav class="page-navigation">
+			<a class="page-navigation__link" href="index.html">Strona główna</a>
+			<a class="page-navigation__link" href="index_notes.html">Notatki z WTF</a>
+			<a class="page-navigation__link" href="index_homework.html">Praca domowa</a>
+			<a class="page-navigation__link" href="index_test.html">Strona test</a>
 		</nav>
 	</header>
 	<main>
-		<header id="top">
-			<h1 class="title-header">Adrian Białobrodzki - Strona domowa</h1>
+		<header class="page-header" id="top">
+			<h1 class="page-header__header">Adrian Białobrodzki - Strona domowa</h1>
 		</header>
-		<section>
-			<h2 class="title-section">Kim jestem?</h2>
-			<p class="article-content">Hej! Na codzień zajmuję się testowaniem oprogramowania. Głównie wykonuje testy
-				manualne, niemniej
-				zaczynam również pisać testy automatyczne w jednym z projektów. Poza tym, prywatnie uwielbiam motocykle
-				i podróżowanie nimi. W zimowe wieczory nie pogardzę dobrą grą. Witam Cię na mojej stronie domowej, mam
-				nadzieję,
-				że znajdziesz tu trochę przydatnych rzeczy.</p>
+		<section class="page-section">
+			<h2 class="page-section__header">Kim jestem?</h2>
+			<img class="page-section__image" src="main/question_mark.jpg" alt="Znak zapytania" width="800" height="350">
+			<p class="page-section__description">Hej! Na codzień zajmuję się testowaniem oprogramowania. Głównie
+				wykonuje
+				testy manualne, niemniej zaczynam również pisać testy automatyczne w jednym z projektów. Poza tym,
+				prywatnie uwielbiam
+				motocykle i podróżowanie nimi. W zimowe wieczory nie pogardzę dobrą grą. Witam Cię na mojej stronie
+				domowej,
+				mam nadzieję, że znajdziesz tu trochę przydatnych rzeczy.</p>
 		</section>
 		<section>
-			<h2 class="title-section">Doświadczenie</h2>
-			<article>
-				<h3 class="title-article">Projekty</h3>
-				<p class="article-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pharetra
+			<h2 class="page-section__header">Doświadczenie</h2>
+			<article class="page-article">
+				<h3 class="page-article__header">Projekty</h3>
+				<p class="page-article__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+					pharetra
 					neque nisi, quis commodo
 					est sagittis eget. Sed a cursus risus. Curabitur nisl turpis, pulvinar nec ipsum id, faucibus
 					volutpat felis. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient
 					montes, nascetur ridiculus mus. Nunc eget erat et diam pellentesque consequat. Nunc id diam
 					tincidunt, imperdiet velit ac, posuere mi. Curabitur consequat ultrices mauris.</p>
 			</article>
-			<article>
-				<h3 class="title-article">Szkolenia i certyfikaty</h3>
-				<p class="article-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pharetra
+			<article class="page-article">
+				<h3 class="page-article__header">Szkolenia i certyfikaty</h3>
+				<p class="page-article__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+					pharetra
 					neque nisi, quis commodo
 					est sagittis eget. Sed a cursus risus. Curabitur nisl turpis, pulvinar nec ipsum id, faucibus
 					volutpat felis. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient
@@ -54,68 +58,77 @@
 			</article>
 		</section>
 		<section>
-			<h2 class="title-section"><a href="https://github.com/abialobrodzki">Rezpozytorium</a> GitHub</h2>
-			<p class="article-content">Poniżej krótki opis poszczególnych projektów:</p>
-			<article>
-				<h3 class="title-article">Projekt <a
-						href="https://github.com/abialobrodzki/Project_Selenium_Cucumber">Project_Selenium_Cucumber</a>:
+			<h2 class="page-section__header"><a class="page-section__header--link"
+					href="https://github.com/abialobrodzki">Rezpozytorium🔗</a> GitHub</h2>
+			<p class="page-section__description">Poniżej krótki opis poszczególnych projektów:</p>
+			<article class="page-article">
+				<h3 class="page-article__header">Projekt <a class="page-article__header--link"
+						href="https://github.com/abialobrodzki/Project_Selenium_Cucumber">Project_Selenium_Cucumber🔗</a>:
 				</h3>
-				<p class="article-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus lacus
+				<p class="page-article__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+					tempus
+					lacus
 					eu mauris venenatis, vel
 					mattis elit pellentesque. Sed tincidunt vestibulum magna in eleifend. In sapien nisi, ornare in
 					iaculis at, volutpat in felis. Suspendisse luctus, est ut sollicitudin imperdiet, sem neque mollis
 					odio, ultricies imperdiet ligula mauris id lectus. Proin malesuada nibh eu turpis vulputate maximus.
 					Quisque ac suscipit nisi. Sed suscipit iaculis accumsan. Praesent ante ante, sagittis.</p>
 			</article>
-			<article>
-				<h3 class="title-article">Projekt <a
-						href="https://github.com/abialobrodzki/Automation_repository">Automation_repository</a>:
+			<article class="page-article">
+				<h3 class="page-article__header">Projekt <a class="page-article__header--link"
+						href="https://github.com/abialobrodzki/Automation_repository">Automation_repository🔗</a>:
 				</h3>
-				<p class="article-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu eros
+				<p class="page-article__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu eros
 					ullamcorper, ornare quam eget,
 					facilisis enim. Nullam fringilla eros in auctor venenatis. Aliquam leo ex, luctus ac egestas vel,
 					condimentum ac massa. Nullam consequat purus sed placerat gravida. Ut et dolor vel risus tincidunt
 					lobortis id non odio. Fusce condimentum sit amet nulla et euismod. Maecenas aliquam, eros sit amet
 					pharetra lacinia, nisl est egestas lectus, et mattis.</p>
 			</article>
-			<article>
-				<h3 class="title-article">Projekt <a
-						href="https://github.com/abialobrodzki/Web-Services-testing-practice">Web-Services-testing-practice</a>:
+			<article class="page-article">
+				<h3 class="page-article__header">Projekt <a class="page-article__header--link"
+						href="https://github.com/abialobrodzki/Web-Services-testing-practice">Web-Services-testing-practice🔗</a>:
 				</h3>
-				<p class="article-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur
+				<p class="page-article__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+					consectetur
 					sodales vestibulum. Donec
 					eu justo ultrices, vestibulum augue in, tempus nunc. Vivamus molestie augue in posuere ornare. Cras
 					eu odio malesuada, mattis quam id, pretium diam. Suspendisse molestie turpis non enim vestibulum,
 					vel vulputate est lacinia. Pellentesque viverra a arcu id dignissim. Ut ultrices elementum enim, at
 					vehicula nisl porta quis. Cras iaculis suscipit enim vel tincidunt. Integer metus.</p>
 			</article>
-			<article>
-				<h3 class="title-article">Projekt <a
-						href="https://github.com/abialobrodzki/Test-workshop---full-process">Test-workshop---full-process</a>:
+			<article class="page-article">
+				<h3 class="page-article__header">Projekt <a class="page-article__header--link"
+						href="https://github.com/abialobrodzki/Test-workshop---full-process">Test-workshop---full-process🔗</a>:
 				</h3>
-				<p class="article-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet enim
+				<p class="page-article__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+					laoreet
+					enim
 					non tristique vestibulum.
 					Morbi sodales in tortor eu tincidunt. Integer semper, est sit amet interdum vehicula, nunc nibh
 					porttitor libero, a bibendum metus magna id turpis. Ut pulvinar massa et velit tristique aliquam. Ut
 					porttitor viverra pretium. Proin tempor dui sed felis sagittis pulvinar. Vestibulum eu orci quam.
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur.</p>
 			</article>
-			<article>
-				<h3 class="title-article">Projekt <a
-						href="https://github.com/abialobrodzki/mySQL-database">mySQL-database</a>:
+			<article class="page-article">
+				<h3 class="page-article__header">Projekt <a class="page-article__header--link"
+						href="https://github.com/abialobrodzki/mySQL-database">mySQL-database🔗</a>:
 				</h3>
-				<p class="article-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim mattis
+				<p class="page-article__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+					dignissim
+					mattis
 					interdum. Duis venenatis
 					ut elit eu condimentum. Mauris ac nisl aliquam, ornare mi vel, faucibus massa. Vivamus nec ornare
 					ex. Nullam maximus justo nec metus fringilla, nec cursus dolor egestas. Cras interdum ut eros quis
 					rhoncus. Etiam rhoncus lorem vel interdum malesuada. Suspendisse consectetur tellus id leo dapibus,
 					id ullamcorper orci pulvinar. Nulla dignissim ullamcorper quam nec ultrices.</p>
 			</article>
-			<article>
-				<h3 class="title-article">Projekt <a
-						href="https://github.com/abialobrodzki/What-The-Frontend">What-The-Frontend</a>:
+			<article class="page-article">
+				<h3 class="page-article__header">Projekt <a class="page-article__header--link"
+						href="https://github.com/abialobrodzki/What-The-Frontend">What-The-Frontend🔗</a>:
 				</h3>
-				<p class="article-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dui
+				<p class="page-article__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Suspendisse dui
 					ante, efficitur mollis mi
 					eget, porta dignissim magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Class
 					aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec id leo
@@ -124,27 +137,34 @@
 			</article>
 		</section>
 		<section>
-			<h2 class="title-section">Zainteresowania</h2>
-			<article>
-				<h3 class="title-article">Motocykle i podróże</h3>
-				<p class="article-content">Jazda poza asfaltem to niezły fun 🏍, w tej chwili jeżdzę Hondą CRF 300 Rally
+			<h2 class="page-section__header">Zainteresowania</h2>
+			<article class="page-article">
+				<h3 class="page-article__header">Motocykle i podróże</h3>
+				<p class="page-article__description">Jazda poza asfaltem to niezły fun 🏍, w tej chwili jeżdzę Hondą CRF
+					300
+					Rally
 				</p>
-				<img src="main/crf.png" alt="Zdjęcie mojego motocykla - Honda CRF 300 Rally" width="260" height="200">
+				<img src="main/crf.png" class="page-article__image" alt="Zdjęcie mojego motocykla - Honda CRF 300 Rally"
+					width="260" height="200">
 			</article>
-			<article>
-				<h3 class="title-article">Gry PC</h3>
-				<p class="article-content">Biblioteczka polecanych gier na zimowe wieczory: <br> Fallout 2
+			<article class="page-article">
+				<h3 class="page-article__header">Gry PC</h3>
+				<p class="page-article__description">Biblioteczka polecanych gier na zimowe wieczory: <br> Fallout 2
 				</p>
-				<img src="main/f2.png" alt="Zdjęcie okładki gry Fallout 2" width="100" height="100">
-				<p class="article-content"> Cyberpunk 2077</p>
-				<img src="main/cp2077.jpg" alt="Zdjęcie okładki gry Cyberpunk 2077" width="100" height="100">
-				<p class="article-content"> Red Dead Redemption 2</p>
-				<img src="main/rdr2.jpg" alt="Red Dead Redemption 2" width="100" height="100">
+				<img class="page-article__image" src="main/f2.png" alt="Zdjęcie okładki gry Fallout 2" width="100"
+					height="100">
+				<p class="page-article__description"> Cyberpunk 2077</p>
+				<img class="page-article__image" src="main/cp2077.jpg" alt="Zdjęcie okładki gry Cyberpunk 2077"
+					width="100" height="100">
+				<p class="page-article__description"> Red Dead Redemption 2</p>
+				<img class="page-article__image" src="main/rdr2.jpg" alt="Red Dead Redemption 2" width="100"
+					height="100">
 			</article>
 		</section>
 	</main>
-	<footer class="footer-content">Footer - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan, mi
-		at ultrices <a href="#top">Do góry ⏫</a>.
+	<footer class="page-footer-content">Footer - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+		accumsan, mi
+		at ultrices <a class="page-footer-content--link" href="#top">⏫Do góry⏫</a>.
 	</footer>
 	<script src="main.js"></script>
 </body>

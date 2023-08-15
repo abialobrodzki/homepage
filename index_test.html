@@ -7,36 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WTF: Co ten frontend</title>
     <link href="normalize.css" rel="stylesheet" type="text/css">
-    <link href="style_notes.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="index.html">Strona główna</a>
-            <a href="index_notes.html">Notatki z WTF</a>
-            <a href="index_homework.html">Praca domowa</a>
-            <a href="index_test.html">Strona test</a>
+        <nav class="page-navigation">
+            <a class="page-navigation__link" href="index.html">Strona główna</a>
+            <a class="page-navigation__link" href="index_notes.html">Notatki z WTF</a>
+            <a class="page-navigation__link" href="index_homework.html">Praca domowa</a>
+            <a class="page-navigation__link" href="index_test.html">Strona test</a>
         </nav>
     </header>
     <main>
-        <header id="top">
-            <h1>Index test</h1>
+        <header class="page-header" id="top">
+            <h1 class="page-header__header">Index test</h1>
         </header>
-        <section>
-            <h2>Test 1</h2>
-            <p>Paragraf section - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lacus et mi porta
+        <section class="page-section">
+            <h2 class="page-section__header">Test 1</h2>
+            <p class="page-section__description">Paragraf section - Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Sed et lacus et mi porta
                 commodo a ac sem
                 Vivamus id
                 odio ac lectus blandit pretium sed at ante. Etiam quis imperdiet ante, in fringilla nisl. Morbi ut
                 iaculis
                 nunc. Integer sit amet nibh nisi. Nulla ac enim vel lectus efficitur.</p>
         </section>
-        <section>
-            <h2>Test 2</h2>
-            <article>
-                <h3>Test 2.1 - h3</h3>
-                <p>Paragraf article - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus tristique
+        <section class="page-section">
+            <h2 class="page-section__header">Test 2</h2>
+            <article class="page-article">
+                <h3 class="page-article__header">Test 2.1 - h3</h3>
+                <p class="page-article__description">Paragraf article - Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Etiam faucibus tristique
                     nulla eu bibendum.
                     Aliquam <br>
                     pharetra purus ac est bibendum, vitae gravida tellus luctus. Ut vel maximus dolor. Donec eu rhoncus
@@ -58,9 +60,10 @@
                     Cras feugiat vulputate orci non egestas. Phasellus porta urna velit, non suscipit lectus cursus
                     quis. <br> </p>
             </article>
-            <article>
-                <h3>Test 2.2 - h3</h3>
-                <p>Paragraf article - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a quam vitae tellus
+            <article class="page-article">
+                <h3 class="page-article__header">Test 2.2 - h3</h3>
+                <p class="page-article__description">Paragraf article - Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Ut a quam vitae tellus
                     elementum pulvinar at
                     at
                     erat.
@@ -91,8 +94,9 @@
             </article>
         </section>
     </main>
-    <footer>Footer - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan, mi at ultrices <a
-            href="#top">Do góry ⏫</a>.
+    <footer class="page-footer-content">Footer - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        accumsan, mi
+        at ultrices <a class="page-footer-content--link" href="#top">⏫Do góry⏫</a>.
     </footer>
 </body>
 
