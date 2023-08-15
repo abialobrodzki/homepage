@@ -517,22 +517,28 @@ section a {
 
 /* style wg BEM */
 .page-navigation {
-	background: rgb(95, 82, 82);
-	padding: 20px;
-	border-radius: 15px;
+    background: rgb(95, 82, 82);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
 }
 
 .page-navigation__link {
-	color: whitesmoke;
-	padding: 5px;
-	font-weight: bold;
-	letter-spacing: 1px;
-	text-decoration: none;
-	background: black;
-	border-width: 1px;
-	border-style: solid;
-	border-color: whitesmoke;
-	border-radius: 20px;
+    color: whitesmoke;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    margin: 3px auto;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background: black;
+    border-width: 1px;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-radius: 20px;
+    display: inline-block;
 }
 
 .article {
