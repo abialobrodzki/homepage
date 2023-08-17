@@ -13,6 +13,7 @@ html {
 
 header {
 	padding: 16px;
+	margin-top: 15vh;
 }
 
 section {
@@ -125,4 +126,12 @@ body {
 	text-decoration: none;
 	color: green;
 	font-weight: bold;
+}
+
+/* box-model - test */
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding-right: 32px;
 }

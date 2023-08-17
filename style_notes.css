@@ -15,8 +15,12 @@ html {
 /* ----------------------------------------------------------------------------------------------------------------------------------------- */
 
 header {
-    padding: 16px;
-    background-color: red;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-top: 15vh;
+    /* margin-top: 30px; */
+    background: red;
 }
 
 section {
@@ -553,4 +557,12 @@ section a {
 .article__header--special {
     color: tomato;
     margin-left: 32px;
+}
+
+/* box-model */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-right: 32px;
 }
