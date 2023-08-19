@@ -594,6 +594,49 @@ section a {
     z-index: 30;
 }
 
+.page-article__description--font-size {
+    font-size: 10px;
+}
+
+.page-article__description--font-family {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* wypisywane bezpieczne czcionki, działajęce na większości przeglądarek */
+}
+
+.page-article__description--font-family-mono {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.page-article__description--font-weight {
+    font-weight: 400;
+}
+
+.page-article__description--font-weight-bold {
+    font-weight: 700;
+}
+
+.page-article__description--font-weight-light {
+    font-weight: 100;
+}
+
+.page-article__description--line-height {
+    line-height: 1.75;
+}
+
+.page-article__description--letter-spacing {
+    letter-spacing: 2px;
+}
+
+.page-article__description--letter-spacing-minus {
+    letter-spacing: -1px;
+}
+
+.page-article__description--letter-span {
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: hotpink;
+}
+
 /* box-model */
 /* .navbar {
     position: fixed;
