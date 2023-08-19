@@ -10,28 +10,20 @@ html {
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------- */
-
-header {
-	padding: 16px;
-	margin-top: 15vh;
+main {
+	max-width: 768px;
+	/* wartość wg M.Korsan - dobra do wygodnego przeglądania */
+	margin: 0 auto;
 }
 
-section {
-	padding: 16px;
-}
-
-footer {
-	padding: 16px;
-}
-
-body {
-	background: #fefefe;
+.header {
+	position: sticky;
+	top: 0;
 }
 
 .page-navigation {
 	background: rgb(95, 82, 82);
 	padding: 20px;
-	border-radius: 15px;
 	text-align: center;
 }
 
@@ -53,12 +45,23 @@ body {
 	display: inline-block;
 }
 
+.page-header {
+	padding-top: 32px;
+	padding-right: 16px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+}
+
 .page-header__header {
 	color: black;
 	background: orange;
 	border-radius: 5px;
 	margin: auto;
 	display: block;
+}
+
+.page-section {
+	padding: 16px;
 }
 
 .page-section__header {
@@ -79,6 +82,7 @@ body {
 	max-width: 100%;
 	min-width: 100%;
 	padding: 5px 5px;
+	display: block;
 }
 
 .page-section__description {
@@ -87,6 +91,10 @@ body {
 	display: block;
 	text-align: justify;
 	padding: 5px 5px;
+}
+
+.page-article {
+	padding: 16px;
 }
 
 .page-article__header {
@@ -110,28 +118,31 @@ body {
 }
 
 .page-article__image {
-	margin: auto;
 	max-width: 100%;
 	padding: 5px 15px;
-}
-
-.page-footer-content {
-	background: lightgoldenrodyellow;
-	font-style: italic;
-	margin: auto;
 	display: block;
 }
 
-.page-footer-content--link {
-	text-decoration: none;
-	color: green;
-	font-weight: bold;
+.page-footer-content {
+	max-width: 768px;
+	margin: 0 auto;
+	padding: 16px;
+	color: gray;
+	background: lightgoldenrodyellow;
+	font-style: italic;
+	display: block;
 }
 
-/* box-model - test */
-.navbar {
+.page-footer__top-link {
 	position: fixed;
-	top: 0;
-	width: 100%;
-	padding-right: 32px;
+	bottom: 16px;
+	right: 16px;
+	text-decoration: none;
+	color: white;
+	padding: 8px 12px;
+	background: black;
+	display: block;
+	font-weight: bold;
+	border-radius: 8px;
+	font-style: normal;
 }

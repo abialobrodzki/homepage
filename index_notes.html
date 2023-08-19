@@ -25,7 +25,7 @@
 </head>
 
 <body> <!-- jak chcemy zawinąć dłuższy tekst to, 'view -> Word Wrap' lub 'ALT' + 'Z' -->
-    <header> <!-- wyrzucony poza sekcję main bo się powtarza na innych stronach -->
+    <header class="header"> <!-- wyrzucony poza sekcję main bo się powtarza na innych stronach -->
         <div class="navbar">
             <nav class="page-navigation"> <!-- BEM - przykład dla nawigacji -->
                 <a class="page-navigation__link" href="index.html">Strona główna</a>
@@ -152,7 +152,7 @@
                 <h3>Obrazki - <em>img</em></h3> <!-- załączamy obrazek o podanym adresie -->
                 <p>Przykładowy obrazek:
                 </p>
-                <img src="notes/warstwy.png" alt="Warstwy strony internetowej" width="500" height="400">
+                <img class="page-article__image" src="notes/warstwy.png" alt="Warstwy strony internetowej">
             </article>
         </section>
         <section>
@@ -293,7 +293,7 @@
                     dla każdego z zasobów wykonuje zapytanie <br>
                     - przeglądarka parsuje i renderuje stronę <br>
                 </p>
-                <img src="notes/url.png" alt="Warstwy strony internetowej" width="500" height="250">
+                <img class="page-article__image" src="notes/url.png" alt="Warstwy strony internetowej">
             </article>
             <article>
                 <h3>Kody odpowiedzi HTTP</h3>
@@ -658,7 +658,7 @@
                     - margin - na zewnątrz elementu, określa o ile dany element ma być oddalony od innych elementów<br>
                     <br>Schemat:
                 </p>
-                <img src="notes/box-model.png" alt="Schemat box-model" width="500" height="250">
+                <img class="page-article__image" src="notes/box-model.png" alt="Schemat box-model">
             </article>
             <article>
                 <h3>Padding</h3>
@@ -869,7 +869,7 @@
                     wysokości odejmowane wysokość paddingu oraz border. <br>
                     <br>Schemat:
                 </p>
-                <img src="notes/box-sizing.png" alt="Schemat box-model" width="600" height="250">
+                <img class="page-article__image" src="notes/box-sizing.png" alt="Schemat box-model">
             </article>
             <article>
                 <h3>Przykład użycia - content-box</h3>
@@ -1179,7 +1179,7 @@
                     - <em>let</em> - wartość może się zmieniać, ale zdefiniowane są raz<br>
                     Zmienna const w momemcie przypisania wartości jest zapamiętywana. Typy zmiennych:
                 </p>
-                <img src="notes/variables.png" alt="Zmienne w JavaScript" width="500" height="250">
+                <img class="page-article__image" src="notes/variables.png" alt="Zmienne w JavaScript">
             </article>
             <article>
                 <h3>Typy zmiennych JS</h3>
@@ -1319,11 +1319,12 @@
                     Ustalenie adresu IP w Windows: wiersz poleceń -> polecenie: <em>ipconfig</em> -> IPv4 Address.</p>
             </article>
         </section>
-        <section class="section"> <!-- BEM - przykład dla sekcji -->
-            <h2 class="section__header">Moduł IV. BEM</h2>
-            <article class="article"> <!-- BEM - przykład dla artykułu -->
-                <h3 class="article__header">BEM - Block Element Modifier</h3>
-                <p class="article__description">Specjalny model nazywania klas css, który wprowadza do projektu
+        <!-- BEM wdrażany od tych sekcji - użycie ogólnego formatowania może zaburzyć flow przykładów z notatek ze szkolenia -->
+        <section class="page-section"> <!-- BEM - przykład dla sekcji -->
+            <h2 class="page-section__header">Moduł IV. BEM</h2>
+            <article class="page-article"> <!-- BEM - przykład dla artykułu -->
+                <h3 class="page-article__header">BEM - Block Element Modifier</h3>
+                <p class="page-article__description">Specjalny model nazywania klas css, który wprowadza do projektu
                     porządek:<br>
                     - Block - nadrzędnu element;<br>
                     - Element - częśc bloku(nie musi być bezpośrednim dzieckiem, ale musi się odnosić do elementu);<br>
@@ -1338,22 +1339,23 @@
                     niego wartości, nie przepisujemy rzeczy z klasy bazowej)
                     Przykłady użycia:<br>
                 </p>
-                <img src="notes/BEM_html.png" class="article__image" alt="BEM w html" width="650" height="400"><br>
-                <img src="notes/BEM_css.png" class="article__image" alt="BEM w css" width="300" height="400">
-                <p class="article__description">Przykład na fragmencie projektu poniżej.</p>
+                <img class="page-article__image" src="notes/BEM_html.png" alt="BEM w html"><br>
+                <img class="page-article__image" src="notes/BEM_css.png" alt="BEM w css">
+                <p class="page-article__description">Przykład na fragmencie projektu poniżej.</p>
             </article>
-            <article class="article"> <!-- BEM - przykład dla artykułu -->
-                <h3 class="article__header article__header--special">Test - przykład BEM</h3>
-                <p class="article__description">Tekst Tekst Tekst... Przykład użycia formatowania wg modelu BEM.
+            <article class="page-article"> <!-- BEM - przykład dla artykułu -->
+                <h3 class="page-article__header page-article__header--special">Test - przykład BEM</h3>
+                <p class="page-article__description">Tekst Tekst Tekst... Przykład użycia formatowania wg modelu BEM.
                     Przykład użycia formatowania BEM.
                     Przykład użycia formatowania wg modelu BEM. Przykład użycia formatowania BEM.
                     <br>Przykład użycia:
                 </p>
-                <div class="article__description">Co ten frontend?!<a href="#" class="article__link">link</a>Maciek
+                <div class="page-article__description">Co ten frontend?!<a class="page-article__link"
+                        href="#">link</a>Maciek
                 </div>
-                <div class="article__description">Co ten frontend?!</div>
-                <div class="article__description">Co ten frontend?!</div>
-                <div class="article__description">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                <div class="page-article__description">Co ten frontend?!</div>
+                <div class="page-article__description">Co ten frontend?!</div>
+                <div class="page-article__description">Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
                     frontend?!Co ten
                     frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
                     frontend?!Co ten
@@ -1364,11 +1366,12 @@
                     frontend?!<br></div>
             </article>
         </section>
-        <section class="section">
-            <h2 class="section__header">Moduł IV. DOM</h2>
-            <article class="article">
-                <h3 class="article__header">DOM - Document Object Model</h3>
-                <p class="article__description">DOM - Obiektowy Model Dokumentów, widoczny z poziomu DevTools. Jest to
+        <section class="page-section">
+            <h2 class="page-section__header">Moduł IV. DOM</h2>
+            <article class="page-article">
+                <h3 class="page-article__header">DOM - Document Object Model</h3>
+                <p class="page-article__description">DOM - Obiektowy Model Dokumentów, widoczny z poziomu DevTools. Jest
+                    to
                     swego rodzaju pomost pomiędzy JS a HTML. DOM to złożony w przeglądarce HTML, który może być
                     modyfikowany przez JS. UWAGA: <strong>Plik HTML ani źródło strony to nie jest DOM.</strong><br>
                     Selektor JS (działa tak samo jak w CSS):<br>
@@ -1398,8 +1401,8 @@
         </section>
     </main>
     <!-- wyrzucony poza sekcję main bo się powtarza na innych stronach -->
-    <footer>Footer - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan, mi at ultrices <a
-            href="#top">Do góry ⏫</a>. <!-- emoji: "win" + ">" -->
+    <footer class="page-footer-content">Footer - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        accumsan, mi at ultrices <a class="page-footer__top-link" href="#top">⏫Do góry⏫</a>. <!-- emoji: "win" + ">" -->
     </footer> <!-- stopka dokumetu/sekcji/artykuł -->
     <!-- alarmy wywołane z poziomu pliku index.html -->
     <!-- <script> 

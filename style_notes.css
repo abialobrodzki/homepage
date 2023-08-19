@@ -14,12 +14,13 @@ html {
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------- */
 
+main {
+    max-width: 768px;
+    /* wartość wg M.Korsan - dobra do wygodnego przeglądania */
+    margin: 0 auto;
+}
+
 header {
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 16px;
-    padding-top: 15vh;
-    /* margin-top: 30px; */
     background: red;
 }
 
@@ -34,6 +35,7 @@ footer {
 h1 {
     color: whitesmoke;
     background: rgb(255, 0, 0);
+    padding: 16px;
 }
 
 h2 {
@@ -520,10 +522,14 @@ section a {
 }
 
 /* style wg BEM */
+.header {
+    position: sticky;
+    top: 0;
+}
+
 .page-navigation {
     background: rgb(95, 82, 82);
     padding: 20px;
-    border-radius: 15px;
     text-align: center;
 }
 
@@ -545,24 +551,53 @@ section a {
     display: inline-block;
 }
 
-.article {
+.page-article {
     background: #dcdcdc;
     margin-bottom: 16px;
 }
 
-.article__header {
+.page-article__header {
     color: #044550;
 }
 
-.article__header--special {
+.page-article__header--special {
     color: tomato;
     margin-left: 32px;
 }
 
+.page-article__image {
+    max-width: 100%;
+    display: block;
+}
+
+.page-footer-content {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 16px;
+    background: lightgoldenrodyellow;
+    font-style: italic;
+    display: block;
+}
+
+.page-footer__top-link {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    background: black;
+    display: block;
+    font-weight: bold;
+    border-radius: 8px;
+    font-style: normal;
+    z-index: 30;
+}
+
 /* box-model */
-.navbar {
+/* .navbar {
     position: fixed;
     top: 0;
     width: 100%;
     padding-right: 32px;
-}
+} */

@@ -23,7 +23,7 @@ console.log(`Nazywam się ${firstName} i mam ${age} lat`);
 // zmiana elementu klasy z użyciem JS
 const header = document.querySelector('.page-article__header--js');
 console.log(header);
-header.innerHTML = `${firstName} czy wiek ${age} lat to dobry czas na zmianę motocykla?😉`;
+header.innerHTML = `Fragment generowany przez JS: ${firstName} czy wiek ${age} lat to dobry czas na zmianę motocykla?😉`;
 
 const description = document.querySelector('.page-article__description--js');
 console.log(description);
