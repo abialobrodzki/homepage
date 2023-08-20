@@ -1849,6 +1849,87 @@
                 </ul>
             </article>
         </section>
+        <section class="page-section">
+            <h2 class="page-section__header">Moduł V. JS Obiekty</h2>
+            <article class="page-article">
+                <h3 class="page-article__header">Obiekty</h3>
+                <p class="page-article__description">W JS prawie wszystko jest obiektem(nawet typy proste zachowują się
+                    jak obiekty). Obiekt jest strukturą danych. Każdy obiekt zbudowany wg schematu pary <em>key:
+                        value,</em>(<em>klucz: wartość,</em>)-kończony przecinkiem(z wyjątkiem ostatniego). Warunki
+                    konieczne:<br>
+                </p>
+                <ul class="page-article__list">
+                    <li>klucz - musi być unikalny w ramach obiektu</li>
+                    <li>wartość - może być reprezentowana przez prymitywy/funkcje/zagnieżdzenia(inne obiekty)</li>
+                </ul>
+                <p class="page-article__description">Dodatkowo używamy innych nazw:<br>
+                </p>
+                <ul class="page-article__list">
+                    <li>zmienne -> właśności (property) - klucze</li>
+                    <li>funkcje -> metody (methods)</li>
+                </ul>
+                <p class="page-article__description">Przykład obiektu w JS: </p>
+                <div class="page-article__code">
+                    const deathStar = {<br>
+                    diameter: 120000, // własność<br>
+                    fire: (target) => { // metoda<br>
+                    console.log(`${target} destroyed 💥`)<br>
+                    },<br>
+                    isOperating: true,<br>
+                    levels: 357,<br>
+                    name: 'Death Star',<br>
+                    population: 1000<br>
+                    }<br>
+                </div>
+            </article>
+            <article class="page-article">
+                <h3 class="page-article__header">dot notation</h3>
+                <p class="page-article__description">Odnoszenie się poprzez "." np. <em>.name</em> </p>
+                <div class="page-article__code">
+                    console.log(deathStar.name);
+                </div>
+            </article>
+            <article class="page-article">
+                <h3 class="page-article__header">wywołanie metody</h3>
+                <p class="page-article__description">Wywołanie metody fire() w JS np. <em>deathStar.fire();</em> </p>
+                <div class="page-article__code">
+                    deathStar.fire('Alderaan');
+                </div>
+            </article>
+            <article class="page-article">
+                <h3 class="page-article__header">bracket notation</h3>
+                <p class="page-article__description">Pozwala dostać się do właśności obiektu w JS z użyciem nawiasów []
+                    np. <em>deathStar['name']</em> </p>
+                <div class="page-article__code">
+                    console.log(deathStar['name']);
+                </div>
+            </article>
+            <article class="page-article">
+                <h3 class="page-article__header">zagnieżdzenie</h3>
+                <p class="page-article__description">Możliwość wykonania zagnieżdzenia w obiekcie JS - przykład z
+                    dodaniem dowódcy Gwiazdy Śmierci:</p>
+                <div class="page-article__code">
+                    const deathStar = {<br>
+                    diameter: 120000, // własność<br>
+                    fire: (target) => { // metoda<br>
+                    console.log(`${target} destroyed 💥`)<br>
+                    },<br>
+                    isOperating: true,<br>
+                    levels: 357,<br>
+                    name: 'Death Star',<br>
+                    population: 1000,<br>
+                    commander: {<br>
+                    name: 'darth vader'<br>
+                    }<br>
+                    }<br>
+                </div>
+                <p class="page-article__description">Możliwość odwołania się do właśności zagnieżdzonego obiektu -
+                    przykład</p>
+                <div class="page-article__code">
+                    console.log(deathStar.commander.name);
+                </div>
+            </article>
+        </section>
     </main>
     <!-- wyrzucony poza sekcję main bo się powtarza na innych stronach -->
     <footer class="page-footer-content">Footer - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec

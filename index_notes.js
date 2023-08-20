@@ -72,3 +72,26 @@ const calculate3 = myNumber => (myNumber + 3) * 7;
 calculate(1);
 const result3 = calculate(2);
 console.log(result3);
+
+// przykład - obiekt
+const deathStar = {
+    diameter: 120000, // własność
+    fire: (target) => { // metoda
+        console.log(`${target} destroyed 💥`)
+    },
+    isOperating: true,
+    levels: 357,
+    name: 'Death Star',
+    population: 1000,
+    commander: {
+        name: 'darth vader'
+    }
+}
+console.log(deathStar);
+console.log(deathStar.name);
+deathStar.fire(); // undefined
+deathStar.fire('Alderaan');
+console.log(deathStar['name']);
+console.log(deathStar.commander); // odwoływanie się do zagnieżdzonego obiektu
+console.log(deathStar.commander.name);
+console.log(deathStar.commander['name']);
