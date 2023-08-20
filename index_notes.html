@@ -1326,7 +1326,7 @@
                 <h3 class="page-article__header">BEM - Block Element Modifier</h3>
                 <p class="page-article__description">Specjalny model nazywania klas css, który wprowadza do projektu
                     porządek:<br>
-                    - Block - nadrzędnu element;<br>
+                    - Block - nadrzędny element;<br>
                     - Element - częśc bloku(nie musi być bezpośrednim dzieckiem, ale musi się odnosić do elementu);<br>
                     - Modifier - modyfikator - jeśli element występuje w kilku wariantach tworzymy dodatkową klasę;<br>
                     <br>Sposób zapisu BEM: <strong>block__element--modifier</strong>. <em>Block</em> jest zawsze,
@@ -1373,23 +1373,24 @@
                 <p class="page-article__description">DOM - Obiektowy Model Dokumentów, widoczny z poziomu DevTools. Jest
                     to
                     swego rodzaju pomost pomiędzy JS a HTML. DOM to złożony w przeglądarce HTML, który może być
-                    modyfikowany przez JS. UWAGA: <strong>Plik HTML ani źródło strony to nie jest DOM.</strong><br>
-                    Selektor JS (działa tak samo jak w CSS):<br>
+                    modyfikowany przez JS. <br>UWAGA: <strong>Plik HTML ani źródło strony to nie jest DOM.</strong><br>
+                    <br>Selektor JS (działa tak samo jak w CSS):<br>
                     Funkcja <em><strong>document.querySelector('.selector')</strong></em> odpowiednik $('.selector') w
                     języku
                     jQuery. Funkja querySelector zwraca node(węzeł) z HTML'a, a selektor zapisywany zgodnie z CSS.<br>
-                    Stosując BEM elementy powinny być oznaczane w taki sposób (dotyczy elementów odnoszących się do
+                    <br>Stosując BEM elementy powinny być oznaczane w taki sposób (dotyczy elementów odnoszących się do
                     JS):<br>
                     <em><strong>block__element--js</strong></em><br>
                     Tego elementu nie stylujemy w pliku css, bo jest on wykonywany przez skrypt i po to żeby było
                     bardziej czytelnie(ułatwia identyfikację, pomaga usuwać problemy).<br>
-                    Użycie <em>defer</em> pozwala na ukrycie zawartości węzła, przykład poniżej:<br>
+                    <br>Użycie <em>defer</em> pozwala na ukrycie zawartości węzła, deklaracja HTML - przykład
+                    poniżej:<br>
                     &lt;script <strong>defer</strong> src="index_notes.js"&gt;&lt;/script&gt;<br>
-                    Przykład użycia - dla nagłówka h1:<br>
+                    <br>Przykład użycia deklaracji JS - dla nagłówka h1:<br>
                     <strong>&lt;h1 class="page-header__heading page-header__heading--js"&gt;Notatki ze szkolenia WTF: Co
                         Ten
                         Frontend. Nagłówek tekstowy header - &lt;h1&gt;&lt;/h1&gt;</strong><br>
-                    Składnia operacji JS na elemencie:<br>
+                    <br>Składnia operacji JS na elemencie:<br>
                     <em><strong>nazwaZmiennejQuerySelector.innerHTML = 'treść'</strong></em> - modyfikacja wyświetlonej
                     treści<br>
                     Przykład operacji JS:<br>
@@ -1574,6 +1575,57 @@
                     frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
                     frontend?!<br>
                 </div>
+            </article>
+            <article class="page-article">
+                <h3 class="page-article__header">REM - EM - Typografia: jednostka &lt;<em>em</em>&gt;</h3>
+                <p class="page-article__description">Pozwala na określenie wielkości wg odniesienia do wielkości innego
+                    elementu. Stosowany np. dla letter-spacingu, wg wzoru:<br><strong>1 em = font-size dla elementu
+                        (dziedziczony/ustawiony) * 1</strong> - liczba em pełni rodzaj mnożnika. Niekoniecznie musi być
+                    stosowany do rozmiaru czcionki, ale też innych elementów np. tła czy odstępów.<br> Na przykład dla
+                    deklaracji css <em>font-size: 0.69em;</em> mamy:
+                </p>
+                <div class="page-article__description--em">
+                    Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>
+                </div>
+            </article>
+            <article class="page-article">
+                <h3 class="page-article__header">REM - EM - Typografia: jednostka &lt;<em>rem</em>&gt;</h3>
+                <p class="page-article__description">Pozwala na określenie wielkości wg odniesienia do root elementu
+                    (zawartego w htmlu{}) - domyślnie 16px - ale to też zależy od przeglądarki, wg wzoru:<br><strong>1
+                        rem = font-size dla root elementu * 1</strong> - liczba rem pełni rodzaj
+                    mnożnika.<strong>Stosowana obecnie</strong> w projektach np. do paddingu, marginesów, rozmiaru
+                    czcionek<br> Na przykład dla deklaracji css <em>font-size: 0.69rem;</em> mamy:
+                </p>
+                <div class="page-article__description--rem">
+                    Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
+                    frontend?!Co ten
+                    frontend?!<br>
+                </div>
+                <p class="page-article__description">Możemy też użyć specjalnego kalkulatora do przeliczania pod linkiem
+                    <a class="page-article__link" href="https://nekocalc.com/px-to-rem-converter">kalkulator px to
+                        rem</a>
+                </p>
+                <p class="page-article__description">Zostawić domyślne ustawienia rozmiaru czcionki, żeby nie ograniczać
+                    dostępności.<br>Czego nie robić:
+                </p>
+                <img class="page-article__image" src="notes/alert_1_font_size.png"
+                    alt="Czego nie robić - font-size deklarowany na sztywno w px">
+                <img class="page-article__image" src="notes/alert_2_font_size.png"
+                    alt="Czego nie robić - font-size deklarowany na sztywno w %">
             </article>
         </section>
     </main>

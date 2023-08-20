@@ -552,8 +552,12 @@ section a {
 }
 
 .page-article {
-    background: #dcdcdc;
+    background: #e9e6e6;
     margin-bottom: 16px;
+}
+
+.page-article__description {
+    text-align: justify;
 }
 
 .page-article__header {
@@ -568,6 +572,11 @@ section a {
 .page-article__image {
     max-width: 100%;
     display: block;
+}
+
+.page-article__link {
+    color: blue;
+    text-decoration: none;
 }
 
 .page-footer-content {
@@ -635,6 +644,14 @@ section a {
     letter-spacing: 2px;
     font-weight: bold;
     color: hotpink;
+}
+
+.page-article__description--em {
+    font-size: 0.69em;
+}
+
+.page-article__description--rem {
+    font-size: 0.69rem;
 }
 
 /* box-model */
