@@ -1602,7 +1602,7 @@
                     (zawartego w htmlu{}) - domyślnie 16px - ale to też zależy od przeglądarki, wg wzoru:<br><strong>1
                         rem = font-size dla root elementu * 1</strong> - liczba rem pełni rodzaj
                     mnożnika.<strong>Stosowana obecnie</strong> w projektach np. do paddingu, marginesów, rozmiaru
-                    czcionek<br> Na przykład dla deklaracji css <em>font-size: 0.69rem;</em> mamy:
+                    czcionek.<br> Na przykład dla deklaracji css <em>font-size: 0.69rem;</em> mamy:
                 </p>
                 <div class="page-article__description--rem">
                     Co ten frontend?!Co ten frontend?!Co ten frontend?!Co ten
@@ -1617,7 +1617,7 @@
                 </div>
                 <p class="page-article__description">Możemy też użyć specjalnego kalkulatora do przeliczania pod linkiem
                     <a class="page-article__link" href="https://nekocalc.com/px-to-rem-converter">kalkulator px to
-                        rem</a>
+                        rem</a>.
                 </p>
                 <p class="page-article__description">Zostawić domyślne ustawienia rozmiaru czcionki, żeby nie ograniczać
                     dostępności.<br>Czego nie robić:
@@ -1626,6 +1626,168 @@
                     alt="Czego nie robić - font-size deklarowany na sztywno w px">
                 <img class="page-article__image" src="notes/alert_2_font_size.png"
                     alt="Czego nie robić - font-size deklarowany na sztywno w %">
+            </article>
+        </section>
+        <section class="page-section">
+            <h2 class="page-section__header">Moduł V. Porady</h2>
+            <article class="page-article">
+                <h3 class="page-article__header">Co robić jak nie działa?</h3>
+                <p class="page-article__description">Szybkie porady w przypadku problemów:<br>
+                    - debugging<br>
+                    - sprawdzić czy plik został zapisany<br>
+                    - sprawdzić czy edytowany właściwy plik<br>
+                    - odświeżyć przeglądarkę (Win&Linux: ctrl+f5 / MacOS: cmd+shift+r)<br>
+                    - sprawdzić czy brak błędów w edytorze/devtoolsach<br>
+                    - czytać błędy<br>
+                    - sprawdzić zakładkę network (devtools)<br>
+                    - sprawdzić rozwiązanie w Google (najlepiej wyszukiwać do roku wstecz)<br>
+                    - pomijać strony takie jak "w3schools" (mogą nie być aktualne - dobre źródła poniżej)<br>
+                    - Stack Overflow<br>
+                </p>
+            </article>
+            <article class="page-article">
+                <h3 class="page-article__header">Dobre źródła:</h3>
+                <p class="page-article__description">Można korzystaż z:<br>
+                    - dokumentacja uzywanego narzędzia<br>
+                    - GitHub issues<br>
+                    - <a class="page-article__link"
+                        href="https://developer.mozilla.org/">https://developer.mozilla.org</a><br>
+                    - <a class="page-article__link" href="https://devdocs.io/">https://devdocs.io/</a><br>
+                    - <a class="page-article__link" href="https://caniuse.com/">https://caniuse.com/</a><br>
+                    - <a class="page-article__link"
+                        href="https://css-tricks.com/almanac/">https://css-tricks.com/almanac/</a><br>
+                    - <a class="page-article__link"
+                        href="https://www.w3.org/TR/html52/">https://www.w3.org/TR/html52/</a><br>
+                    - <a class="page-article__link" href="https://www.w3.org/TR/CSS/">https://www.w3.org/TR/CSS/</a><br>
+                </p>
+            </article>
+        </section>
+        <section class="page-section">
+            <h2 class="page-section__header">Moduł V. Listy, tabele, definicje</h2>
+            <article class="page-article">
+                <h3 class="page-article__header">Znacznik listy &lt;ul&gt; i &lt;li&gt;</h3>
+                <p class="page-article__description">Unordered list - lista nieuporządkowana i List item - element
+                    listy, przykład użycia - Lista ulubionych znaczników:<br>
+                </p>
+                <ul>
+                    <li>h1</li>
+                    <li>ul</li>
+                    <li>a</li>
+                </ul>
+            </article>
+            <article class="page-article">
+                <h3 class="page-article__header">Znacznik listy &lt;ol&gt;</h3>
+                <p class="page-article__description">Ordered list - lista uporządkowana, przykład użycia - Lista kroków
+                    do stworzenia html:<br>
+                </p>
+                <ol>
+                    <li>otworzyć edytor</li>
+                    <li>! [tab]</li>
+                    <li>zapisz plik</li>
+                </ol>
+            </article>
+            <article class="page-article">
+                <h3 class="page-article__header">Styl listy <em>list-style(-type)</em></h3>
+                <p class="page-article__description">Pozwala na stylowanie listy. Na przykład dla deklaracji css
+                    <em>list-style-type: upper-roman;</em> mamy:<br>
+                </p>
+                <ol class="page-article__list">
+                    <li>otworzyć edytor</li>
+                    <li>! [tab]</li>
+                    <li>zapisz plik</li>
+                </ol>
+            </article>
+            <article class="page-article">
+                <h3 class="page-article__header">Zagnieżdzanie list</h3>
+                <p class="page-article__description">Zagnieżdzanie może się odbwać dla różnych typów list
+                    (uporządkowanych i nieuporządkowanych), zagnieżdzenie powinno się zawierać w znaczniku elelemntu
+                    listy a nie pomiędzy nimi:<br>
+                </p>
+                <ol class="page-article__list">
+                    <li>otworzyć edytor</li>
+                    <li>! [tab]
+                        <ul>
+                            <li>h1</li>
+                            <li>ul</li>
+                            <li>a</li>
+                        </ul>
+                    </li>
+                    <li>zapisz plik</li>
+                </ol>
+            </article>
+            <article class="page-article">
+                <h3 class="page-article__header">Znacznik listy &lt;dl&gt; &lt;dt&gt; &lt;dd&gt;</h3>
+                <p class="page-article__description">Description list i powiązane z nim znaczniki Description
+                    term(pojęcie) oraz Description details(opis pojęcia) - na przykładzie Lista ulubionych
+                    znaczników:<br>
+                </p>
+                <ul>
+                    <li>h1</li>
+                    <li>ul</li>
+                    <li>a</li>
+                </ul>
+                <dl>
+                    <dt>h1</dt>
+                    <dd>najważniejszy nagłówek na stronie</dd>
+                </dl>
+            </article>
+            <article class="page-article">
+                <h3 class="page-article__header">Znacznik tabeli &lt;table&gt;</h3>
+                <p class="page-article__description">Tabela do przechowywania danych tabelarycznych, wykorzystywane
+                    znaczniki:<br>
+                    - &lt;tr&gt; - wiersz tabeli (table row)<br>
+                    - &lt;td&gt; - komórka tabeli (table data - cell)<br>
+                    - &lt;thead&gt; - nagłówek tabeli<br>
+                    - &lt;th&gt; - komórka w nagłówku tabeli<br>
+                    - &lt;tbody&gt; - "ciało" tabeli<br>
+                    - &lt;caption&gt; - opis tabeli<br>
+                    Przykład tabeli:<br>
+                </p>
+                <table>
+                    <caption>Rozpiska wtf</caption>
+                    <thead>
+                        <tr>
+                            <th>Numer lekcji</th>
+                            <th>Tytuł</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Hello world!</td>
+                            <td>✅</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Narzędzia</td>
+                            <td>✅</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Prace domowe</td>
+                            <td>❌</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="page-article__description"><strong>Nie używamy tabel do budowania layoutu!!!</strong>
+                </p>
+            </article>
+        </section>
+        <section class="page-section">
+            <h2 class="page-section__header">Moduł V. Encje / Entities</h2>
+            <article class="page-article">
+                <h3 class="page-article__header">Znacznik &lt;copy&gt;</h3>
+                <p class="page-article__description">Specjalne znaczniki - znaki specjalne - tutaj link do dokumentacji
+                    <a class="page-article__link"
+                        href="https://developer.mozilla.org/en-US/docs/Glossary/Entity">mdn</a><br>
+                </p>
+                <ul>
+                    <li>&lt; - lt</li>
+                    <li>&gt; - gt</li>
+                    <li>&euro; - euro</li>
+                    <li>&copy; - copy</li>
+                </ul>
             </article>
         </section>
     </main>

@@ -654,6 +654,20 @@ section a {
     font-size: 0.69rem;
 }
 
+.page-article__list {
+    list-style-type: upper-roman;
+    /* do stylowania list uporządkowanych i nieuporządkowanych */
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+table caption {
+    margin-bottom: 1rem;
+}
+
 /* box-model */
 /* .navbar {
     position: fixed;
