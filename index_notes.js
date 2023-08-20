@@ -37,3 +37,38 @@ header.innerHTML = `Nazywam się ${firstName} i mam ${age} lat`;
 console.log(header.style);
 
 header.style.color = 'yellow';
+
+// przykład funkcji
+function calculate(myNumber) {
+    myNumber = myNumber + 3;
+    console.log(myNumber);
+    return myNumber * 7; // nie jest wyświetlany w konsoli
+}
+calculate(1);
+const result = calculate(2);
+console.log(result);
+
+function hello() {
+    console.log('hello');
+    console.log('hello');
+    console.log('hello');
+    console.log('hello');
+}
+hello();
+console.log(hello()); // undefined
+
+// fat arrow functions
+const calculate2 = (myNumber) => {
+    myNumber = myNumber + 3;
+    console.log(myNumber);
+    return myNumber * 7; // nie jest wyświetlany w konsoli
+}
+calculate(1);
+const result2 = calculate(2);
+console.log(result2);
+
+// fat arrow functions - dla jednej zmiennej można skrócić zapis
+const calculate3 = myNumber => (myNumber + 3) * 7;
+calculate(1);
+const result3 = calculate(2);
+console.log(result3);

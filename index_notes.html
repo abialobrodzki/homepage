@@ -1669,7 +1669,7 @@
                 <p class="page-article__description">Unordered list - lista nieuporządkowana i List item - element
                     listy, przykład użycia - Lista ulubionych znaczników:<br>
                 </p>
-                <ul>
+                <ul class="page-article__list">
                     <li>h1</li>
                     <li>ul</li>
                     <li>a</li>
@@ -1680,7 +1680,7 @@
                 <p class="page-article__description">Ordered list - lista uporządkowana, przykład użycia - Lista kroków
                     do stworzenia html:<br>
                 </p>
-                <ol>
+                <ol class="page-article__list">
                     <li>otworzyć edytor</li>
                     <li>! [tab]</li>
                     <li>zapisz plik</li>
@@ -1691,7 +1691,7 @@
                 <p class="page-article__description">Pozwala na stylowanie listy. Na przykład dla deklaracji css
                     <em>list-style-type: upper-roman;</em> mamy:<br>
                 </p>
-                <ol class="page-article__list">
+                <ol class="page-article__list--special">
                     <li>otworzyć edytor</li>
                     <li>! [tab]</li>
                     <li>zapisz plik</li>
@@ -1721,7 +1721,7 @@
                     term(pojęcie) oraz Description details(opis pojęcia) - na przykładzie Lista ulubionych
                     znaczników:<br>
                 </p>
-                <ul>
+                <ul class="page-article__list">
                     <li>h1</li>
                     <li>ul</li>
                     <li>a</li>
@@ -1743,7 +1743,7 @@
                     - &lt;caption&gt; - opis tabeli<br>
                     Przykład tabeli:<br>
                 </p>
-                <table>
+                <table class="page-article__table">
                     <caption>Rozpiska wtf</caption>
                     <thead>
                         <tr>
@@ -1787,6 +1787,65 @@
                     <li>&gt; - gt</li>
                     <li>&euro; - euro</li>
                     <li>&copy; - copy</li>
+                </ul>
+            </article>
+        </section>
+        <section class="page-section">
+            <h2 class="page-section__header">Moduł V. JS Funkcje</h2>
+            <article class="page-article">
+                <h3 class="page-article__header">Funkcja</h3>
+                <p class="page-article__description">Funkcja w JS:
+                </p>
+                <ul class="page-article__list">
+                    <li>deklarujemy nazwę funkcji(nie zawsze)</li>
+                    <li>w środku dokonujemy obliczeń/wykonujemy zadania</li>
+                    <li>funkcja przyjmuje argumenty(ale nie musi)</li>
+                    <li>funkcja zwraca zawsze coś(nawet jeśli nie mamy <em>return</em> - wtedy funkcja zwraca
+                        <em>undefined</em>)
+                    </li>
+                </ul>
+                <img class="page-article__image" src="notes/JS_function.png" alt="Funkcje JS">
+                <p class="page-article__description">Przykład funkcji JS:<br>
+                </p>
+                <div class="page-article__code">
+                    function calculate(myNumber) {<br>
+                    myNumber = myNumber + 3;<br>
+                    return myNumber * 7;<br>
+                    }<br>
+                </div>
+                <p class="page-article__description">Po co wykorzystujemy funkcje:
+                </p>
+                <ul class="page-article__list">
+                    <li>deklarujemy kod który się nie powtarza - DRY -> Don't Repeat Yourself</li>
+                    <li>zwiększamy czytelność kodu</li>
+                    <li>łatwiejsze szukanie błędów</li>
+                    <li>odpowiedzialność za wykonywane zadania w jednym miejscu</li>
+                </ul>
+            </article>
+            <article class="page-article">
+                <h3 class="page-article__header">(Fat) arrow functions - Funkcja strzałkowa</h3>
+                <p class="page-article__description">Jest to inny sposób deklarowania funkcji. Funkcja jest podpisywana
+                    pod zmienną. Przykład JS:<br>
+                </p>
+                <div class="page-article__code">
+                    const calculate2 = (myNumber) => {<br>
+                    myNumber = myNumber + 3;<br>
+                    return myNumber * 7;<br>
+                    }<br>
+                </div>
+                <p class="page-article__description">Zaletą jest możliwość skracania zapisu. Przykład JS:<br>
+                </p>
+                <div class="page-article__code">
+                    const calculate3 = myNumber => (myNumber + 3) * 7;
+                </div>
+                <p class="page-article__description">Po co wykorzystujemy (fat) arrow function:
+                </p>
+                <ul class="page-article__list">
+                    <li>skraca zapis deklaracji funkcji</li>
+                    <li>zwiększa czytelność</li>
+                    <li>nie tworzy nowego kontekstu <em>this</em>, nie ma dostępu do <em>arguments</em> i <em>super</em>
+                    </li>
+                    <li>nie jest zamiennikiem "tradycyjnej" funkcji (ale w większości przypadków nie ma różnicy)</li>
                 </ul>
             </article>
         </section>
